@@ -1,0 +1,1148 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* HEADER Y FOOTER MOBILE */
+
+.header{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.lista_nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.item_nav{
+    font-size: 20px;
+}
+ 
+h3{
+    color:yellowgreen;
+    font-family: 'Bebas Neue';
+    font-size: 30px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+.section_redes{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+}
+
+.parrafo_footer{  
+    color: yellowgreen;
+    font-size: 10px;
+    font-family: 'Bebas Neue';
+}
+
+.lista_footer{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    list-style-type: none;
+    font-size: 15px;
+    text-align: center;
+}
+ 
+a{
+    text-decoration: none;
+    color:yellowgreen;
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+}
+
+.section_contacto{
+    display: flex;
+    flex-direction: column;
+    color:yellowgreen;
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px){
+    
+    /* HEADER */
+
+    .header{
+        position: sticky;
+        top:0px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav{
+        width: 60%;
+    }
+
+    .lista_nav{
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    
+    .item_nav{
+        font-size: 30px;
+    }
+
+    .item_nav:hover{
+        transform: scale(1.4,1.4);
+    }
+
+    .logo_header{
+        padding-left: 16px;
+    }
+
+    h3{
+        font-size: 50px;
+        text-align: right;
+    }
+
+    .logo_header:hover{
+        transform: scale(1.4,1.4);
+    }
+
+     /*FOOTER*/
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+    }
+
+    .section_redes{
+        width: 40%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+        padding-left: 30px;
+    }
+
+    .parrafo_footer{  
+        font-size: 15px;
+    }
+
+    .lista_footer{
+        width: 70%;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    li:hover{
+        transform: scale(1.3,1.3);
+    }
+
+    .section_contacto{
+        font-weight: lighter;
+        text-align: right;
+        padding-right: 30px;
+    }
+}
+
+/* BODY Y MAIN INDEX */
+
+/* MAIN INDEX MOBILE */
+
+    .main_index{
+        background-color: gray;
+        background-image: url("../img/fondoindex2.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+
+    .contenedor_tituloin{
+        height: 200px;
+    }
+       
+    .titulo_index{
+        color:  rgb(188, 252, 61);
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 70px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .logo_uno{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .titulo2_index{
+        color: rgb(188, 252, 61);
+        font-size: 40px;
+        text-align: center;
+        font-family: 'The Nautigal', cursive;
+        font-weight: bold;
+        line-height: 2 ;
+    }
+    
+    .color_parrafos{
+        color: rgb(188, 252, 61);
+        font-size: 15px;
+        text-align: center;
+        font-family: 'roboto';
+        font-weight: light ;
+    }
+    
+    .quienes_somos{
+        padding-bottom: 10px;
+    } 
+
+    /* MAIN INDEX PC*/
+
+@media screen and (min-width: 600px){
+    .main_index{
+        background-repeat: no-repeat;
+    }
+     
+    .titulo_index{
+        font-size: 100px;
+    }
+    
+    .logo_uno{
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .titulo2_index{
+        font-size: 50px;
+    }
+    
+    .color_parrafos{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    
+    .quienes_somos{
+        padding-bottom: 30px;
+    }
+}
+
+/* BODY Y MAIN GALERÍA */
+
+    /*GALERIA MOBILE FIRST*/
+
+    .main_galeria{
+        background-color: rgb(233, 229, 229);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .titulo1_galeria{
+        color:  rgb(17, 17, 17);
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 40px;
+    }
+        
+    .titulo_galeria{
+        background-image: url("../img/titulogaleria1.jpg");
+        background-repeat: repeat;
+        width: 100%;
+    }
+    
+    .titulos_gal{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .titulo2_galeria{
+        color: rgb(188, 252, 61);
+        font-size: 30px;
+        text-align: center;
+        font-family: 'The Nautigal', cursive;
+        font-weight: bold;
+        background-color: brown;
+    }
+
+    .fotos_club{
+        justify-content: space-evenly;
+        padding-left: 10%;
+    }
+     
+    .img_club1{
+        width: 90%;  
+    }
+
+    .foto_club1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_club2{
+        width: 90%;
+        height: 90%;
+    }
+        
+    .foto_club2{
+        width: 100%;
+        height: 100%;
+    }
+     
+    .img_club3{
+        width: 90%;
+        height: 90%;
+    }
+
+    .foto_club3{
+        width: 100%;
+        height: 100%;
+    }
+
+    .img_club4{
+        width: 90%;
+        height: 90%;
+    }
+        
+    .foto_club4{
+        width: 100%;
+        height: 100%;
+    }
+     
+    .img_club5{
+        width: 90%;
+        height: 90%;
+    }
+
+    .foto_club5{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .img_club6{
+        width: 90%;
+        height: 90%;
+    }
+
+    .foto_club6{
+        width: 100%;
+        height:60%;
+    }
+        
+    .videoclub1{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .video_club{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    .fotos_alumnos{
+        padding-left: 10%;
+    }
+        
+    .foto_alumnos7{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_al7{
+        width: 90%;
+        height: 90%;
+    }
+        
+    .foto_alumnos8{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_al8{
+        width: 100%;
+        height: 90%;
+    }
+        
+    .foto_alumnos9{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_al9{
+        width: 90%;
+        height: 90%;
+    }
+
+    .fotos_pet{
+        padding-left: 10%;
+    }
+        
+    .foto_pet10{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_pet10{
+        width: 90%;
+        height: 90%;
+    }
+        
+    .foto_pet11{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_pet11{
+        width: 90%;
+        height: 90%;
+    }
+        
+    .foto_pet12{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .img_pet12{
+        width: 90%;
+        height: 90%;
+    }
+
+/* GALERIA PC */
+
+@media screen and (min-width:600px){
+    .main_galeria{
+        width: 100%;
+    }
+
+    .titulo1_galeria{
+        font-size: 80px;
+    }
+
+    .titulo_galeria{
+        height: 100px;
+        width: 100%;
+    }
+
+    .titulos_gal{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    .titulo_el_club{
+        padding-top: 20px;
+        height: 100px;
+        width: 100%;
+    }
+
+    .titulo2_galeria{
+        font-size: 60px;
+    }
+
+    .fotos_club{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 350px 350px;
+        grid-template-areas: "g1 g2 g3"
+                             "g4 g5 g6";
+        justify-content: space-around;
+        padding-left: 0%;
+    }
+
+    .img_club1{
+        grid-area: g1;
+        width: 100%;
+    }
+
+    .foto_club1{
+        height: 90%;
+    }
+
+    .img_club2{
+        grid-area: g2;
+        width: 100%;
+    }
+
+    .img_club3{
+        grid-area: g3;
+        width: 100%;
+    }
+
+    .img_club4{
+        grid-area: g4;
+        width: 100%;
+    }
+
+    .img_club5{
+        grid-area: g5;
+        width: 100%;
+    }
+
+    .img_club6{
+        grid-area: g6;
+        width: 100%;
+    }
+
+    .foto_club6{
+        height: 100%;
+    }
+
+    .video_club{
+        height: 400px;
+    }
+
+    .fotos_alumnos{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 350px;
+        grid-template-areas: "g7 g8 g9";
+        justify-content: space-around;
+        padding-left: 0%;
+        padding-right: 0%;
+        align-items: center;
+    }
+
+    .img_al7{
+        grid-area: g7;
+        width: 100%;
+    }
+
+    .img_al8{
+        grid-area: g8;
+        width: 100%;
+    }
+
+    .img_al9{
+        grid-area: g9;
+        width: 100%;
+    }
+
+    .fotos_pet{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 350px;
+        grid-template-areas: "g10 g11 g12"; 
+        justify-content: space-around;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .img_pet10{
+        grid-area: g10;
+        width: 100%;
+    }
+
+    .img_pet11{
+        grid-area: g11;
+        width: 100%;
+    }
+
+    .img_pet12{
+        grid-area: g12;
+        width: 100%;
+    }
+}
+
+.img_club1:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_club2:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_club3:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_club4:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_club5:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_club6:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_al7:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_al8:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_al9:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_pet10:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_pet11:hover{
+    transform: scale(1.1,1.1);
+}
+
+.img_pet12:hover{
+    transform: scale(1.1,1.1);
+}
+
+/*BODY Y MAIN SERVICIOS*/
+
+/* SERVICIOS MOBILE */
+
+    .main_servicios{
+        background-color: rgb(236, 236, 236);
+        background-image: url(../img/fondoserv1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 60px 100px 500px 500px;
+        grid-template-areas: "s1"
+                             "s2"
+                             "s3"
+                             "s4";
+        align-content: center;
+    }
+
+    .titulo1_servicios{
+        color:  rgb(17, 17, 17);
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+    }
+
+    .titulo_servicios{
+        grid-area: s1;
+        background-image: url(../img/tituloservicios.jpg);
+        background-position: center;
+    }
+
+    .parrafos_clases{
+        grid-area: s2;
+        align-self: center;
+        background-color: rgb(255, 108, 55);
+        color: rgb(17, 17, 17);
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+    }
+
+    .fila3_servicios{
+        grid-area: s3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .fila5_servicios{
+        grid-area: s4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alquiler{
+        width: 50%;
+        height: 30%;
+        padding-top: 30px;
+        text-align: center;
+        font-family: 'Cormorant SC', serif;
+        font-size: 15px; 
+        font-weight: bold;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .clases_ig{
+        width: 50%;
+        height: 30%;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Cormorant SC', serif;
+        font-size: 15px; 
+        font-weight: bold;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .escuelita{
+        width: 50%;
+        height: 20%;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Cormorant SC', serif;
+        font-size: 15px; 
+        font-weight: bold;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .entrenamiento{
+        width: 50%;
+        height: 20%;
+        padding-top: 20px;
+        text-align: center;
+        font-family: 'Cormorant SC', serif;
+        font-size: 15px; 
+        font-weight: bold;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .fotoserv2{
+        width: 55%;
+        height: 55%;
+        padding-left: 20px;
+    }
+
+    .foto_serv2{
+        width: 80%;
+        height: 80%;
+        border: 5px solid black;
+    }
+
+    .fotoserv4{
+        width: 50%;
+        height: 50%;
+    }
+
+    .foto_serv4{
+        width: 90%;
+        height: 90%;
+        border: 5px solid black;
+    }
+
+    .fotoserv5{
+        width: 50%;
+        height: 50%;
+    }
+
+    .foto_serv5{
+        width: 90%;
+        height: 90%;
+        border: 5px solid black;
+    }
+
+/* SERVICIOS PC*/
+
+@media screen and (min-width: 600px){
+    .main_servicios{
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 150px 200px 400px;
+        grid-template-areas: "s1"
+                             "s2"
+                             "s3"
+                             "s4";
+        align-content: space-around;
+        justify-content: space-around;
+        padding-bottom: 10px;
+    }
+
+    .animated__animated.animate__bounce{
+        --animate-duration: 5s;
+    }
+    
+    .titulo1_servicios{
+        font-size: 80px;
+    }
+    
+    .titulo_servicios{
+        grid-area: s1;
+        background-repeat: repeat;
+    }
+    
+    .parrafos_clases{
+        grid-area: s2;
+        align-self: center;
+        text-align: center;
+        font-size: 30px;
+        animation-name: fondo_parrafos;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
+    }
+
+    @keyframes fondo_parrafos{
+        0%{
+            background-color: rgb(221, 68, 68);
+        }
+
+        25%{
+            background-color: rgb(255, 182, 46);
+        }
+
+        50%{
+            background-color: rgb(167, 219, 63);
+        }
+
+        75%{
+            background-color: rgb(100, 211, 96);
+        }
+
+        100%{
+            background-color: rgb(255, 108, 55);
+        }
+    }
+    
+    .fila3_servicios{
+        grid-area: s3;
+        flex-direction: row;
+        justify-content: space-around;
+ 
+    }
+    
+    .fila5_servicios{
+        grid-area: s4;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .alquiler{
+        grid-area: s3;
+        width: 30%;
+        font-size: 25px; 
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+    
+    .clases_ig{
+        grid-area: s4;
+        width: 25%;
+        font-size: 25px;
+        font-weight: bolder;
+        padding-top: 0px;  
+        padding-left: 20px;
+    }
+    
+    .entrenamiento{
+        grid-area: s5;
+        width: 30%;
+        font-size: 25px;
+        font-weight: bolder;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    
+    .escuelita{
+        width: 30%;
+        font-size: 30px;
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+
+    .foto_serv2{
+        height: 120%;
+    }
+
+    .foto_serv4{
+        height: 129%;
+    }
+
+    .foto_serv5{
+        height: 129%;
+    }
+}
+
+/* BODY Y MAIN TORNEOS */
+
+ /* TORNEOS MOBILE*/
+
+.main_torneos{
+    background-color: rgb(36, 34, 34);
+    background-image: url(../img/fondotorneos3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo_torneos{
+    color:  rgb(17, 17, 17);
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+    background-image: url(../img/titulotorneos.jpg);
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.titulo2_torneos{
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-family: 'roboto';
+    font-weight: bold; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+    
+.publi_torneos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.foto_torneos1{
+    width: 60%;
+    align-self: center;
+}
+
+.foto_torneos2{
+    width: 60%;
+    align-self: center;
+}
+    
+.parrafo_torneos{
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: rgb(180, 240, 60);
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+    
+.inscribite_torneos{
+    align-self: center;
+}
+    
+.th_torneos{
+    border: 2px solid black;
+    font-family: 'Roboto';
+    color: brown;
+    text-align: center;
+}
+    
+.tabla_torneos td{
+    border:2px solid black;
+    font-family: 'Roboto';
+    color: brown;
+    text-align: center;
+}
+
+.jugadores_torneos{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+/* TORNEOS PC*/
+
+@media screen and (min-width: 500px){
+
+    .titulo_torneos{
+        font-size: 80px;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .titulo2_torneos{
+        font-size: 40px;
+        padding-bottom: 20px;
+    }
+    
+    .publi_torneos{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .foto_torneos1{
+        width: 33%;
+    }
+    .foto_torneos2{
+        width: 30%;
+    }
+    
+    .parrafo_torneos{
+        font-size: 20px;
+        letter-spacing: 3px;
+        line-height: 25px;
+    }
+    
+    .inscribite_torneos{
+        margin-bottom: 20px;
+    }
+}
+
+/* BODY Y MAIN CONTACTOS */
+
+   /* CONTACTO MOBILE */
+
+
+    .main_contacto{
+        background-color: gray;
+        background-image: url(../img/fondocontacto1.jpg);
+        background-position: center;
+    }
+
+    .titulo_contacto{
+        font-family: 'Bebas Neuer';
+        color: black;
+        text-align: center;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 50px;
+    }
+
+    .div_contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .div_formulario{
+        align-self: center;
+    }
+
+    .leg_contacto{
+        font-family: 'The Nautigal', cursive;
+        font-size: 30px;
+    }
+
+    .fil_contacto{
+        display: flex;
+        flex-direction: column;
+        border-width: 5px;
+        font-family: 'Roboto';
+        font-weight: bold;
+        text-align: center;
+        border-color: black;
+    }
+
+    .cont_seldni{
+        width: 90%;
+        align-self: center;
+    }
+
+    .in_form{
+        width: 90%;
+        font-family: 'Roboto';
+        align-self: center;
+    }
+    
+    .boton_form{
+        width: 60%;
+        background-color: gray;
+        font-family: 'Roboto';
+        font-weight: bold;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        align-self: center;
+    }
+
+    .div_telefono{
+        margin-top: 30px;
+        font-family: 'Roboto';
+        font-weight: bolder;
+        text-align: center;
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .maps_contacto{
+        width: 80%;
+        height: 80%;
+    }
+
+   /* CONTACTO PC*/
+
+@media only screen and (min-width: 600px){
+    .main_contacto{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .titulo_contacto{
+        font-size: 80px;
+    }
+    
+    .div_contacto{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 100%;
+        grid-template-areas: "c1 c2";
+        justify-content: space-evenly;
+    }
+    
+    .div_formulario{
+        grid-area: c1;
+        padding-bottom: 20px;
+    }
+    
+    .leg_contacto{
+        font-size: 50px;
+    }
+    
+    .fil_contacto{
+        width: 30%;
+        border-width: 10px;
+    }
+    
+    .cont_label{
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+
+    .cont_seldni{
+        width: 90%;
+    }
+    
+    .in_form{
+        width: 90%;
+    }
+
+    .boton_form:hover{
+        transform: scale(1.1,1.1);
+    }
+    
+    .boton_formf:hover{
+        transform: scale(1,1);
+    }
+    
+    .check_label{
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    
+    .in_checkbox{
+        margin-bottom: 10px;
+    }
+    
+    .div_telefono{
+        grid-area: c2;
+    }
+    
+    .maps_contacto{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
