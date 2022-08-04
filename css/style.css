@@ -22,6 +22,7 @@
     align-content: center;
     text-align: center;
     list-style-type: none;
+    padding-left: 0%;
 }
 
 .item_nav{
@@ -53,12 +54,17 @@ h3{
     justify-content: center;
     align-content: center;
     align-items:center;
+    padding-left: 0px;
 }
 
 .parrafo_footer{  
     color: yellowgreen;
-    font-size: 10px;
+    font-size: 15px;
     font-family: 'Bebas Neue';
+}
+
+.p_contacto{
+    margin-bottom: 0px;
 }
 
 .lista_footer{
@@ -70,6 +76,7 @@ h3{
     list-style-type: none;
     font-size: 15px;
     text-align: center;
+    padding-left: 0%;
 }
  
 a{
@@ -80,6 +87,7 @@ a{
 }
 
 .section_contacto{
+    width: 100%;
     display: flex;
     flex-direction: column;
     color:yellowgreen;
@@ -99,18 +107,21 @@ a{
         justify-content: space-between;
     }
 
-    .nav{
-        width: 60%;
-    }
-
     .lista_nav{
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
         list-style-type: none;
+        margin-bottom: 0px;
     }
     
+    .nav{
+        width: 60%;
+        justify-content: space-around;
+    }
+
     .item_nav{
-        font-size: 30px;
+        font-size: 35px;
     }
 
     .item_nav:hover{
@@ -118,7 +129,7 @@ a{
     }
 
     .logo_header{
-        padding-left: 16px;
+        padding-left: 1%;
     }
 
     h3{
@@ -139,23 +150,29 @@ a{
     }
 
     .section_redes{
-        width: 40%;
+        width: 70%;
         flex-direction: row;
-        justify-content: space-around;
-        align-items:center;
-        padding-left: 30px;
+        justify-content: space-between;
     }
 
     .parrafo_footer{  
         font-size: 15px;
+        margin-bottom: 0px;
+        align-self: center;
+    }
+
+    .titulo_footer{
+        padding-top: 1%;
+        padding-left: 5%;
     }
 
     .lista_footer{
-        width: 70%;
+        width: 100%;
         flex-direction: row;
         justify-content: space-around;
         list-style-type: none;
         font-size: 20px;
+        margin-bottom: 0px;
     }
 
     li:hover{
@@ -165,7 +182,7 @@ a{
     .section_contacto{
         font-weight: lighter;
         text-align: right;
-        padding-right: 30px;
+        padding-right: 1%;
     }
 }
 
@@ -658,11 +675,13 @@ a{
         font-weight: bold;
     }
 
+    .p_clases{
+        margin-bottom: 0px;
+    }
+
     .fila3_servicios{
         grid-area: s3;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding-top: 40px;
     }
 
     .fila5_servicios{
@@ -673,51 +692,31 @@ a{
     }
 
     .alquiler{
-        width: 50%;
-        height: 30%;
-        padding-top: 30px;
         text-align: center;
         font-family: 'Cormorant SC', serif;
         font-size: 15px; 
         font-weight: bold;
-        justify-self: center;
-        align-self: center;
     }
 
     .clases_ig{
-        width: 50%;
-        height: 30%;
-        padding-top: 20px;
         text-align: center;
         font-family: 'Cormorant SC', serif;
         font-size: 15px; 
         font-weight: bold;
-        justify-self: center;
-        align-self: center;
     }
 
     .escuelita{
-        width: 50%;
-        height: 20%;
-        padding-top: 20px;
         text-align: center;
         font-family: 'Cormorant SC', serif;
         font-size: 15px; 
         font-weight: bold;
-        justify-self: center;
-        align-self: center;
     }
 
     .entrenamiento{
-        width: 50%;
-        height: 20%;
-        padding-top: 20px;
         text-align: center;
         font-family: 'Cormorant SC', serif;
         font-size: 15px; 
         font-weight: bold;
-        justify-self: center;
-        align-self: center;
     }
 
     .fotoserv2{
@@ -757,6 +756,7 @@ a{
 /* SERVICIOS PC*/
 
 @media screen and (min-width: 600px){
+
     .main_servicios{
         grid-template-columns: 100%;
         grid-template-rows: 100px 150px 200px 400px;
@@ -784,9 +784,9 @@ a{
     
     .parrafos_clases{
         grid-area: s2;
-        align-self: center;
         text-align: center;
-        font-size: 30px;
+        font-weight: bolder;
+        font-size: 25px;
         animation-name: fondo_parrafos;
         animation-duration: 5s;
         animation-iteration-count: 2;
@@ -818,48 +818,24 @@ a{
         grid-area: s3;
         flex-direction: row;
         justify-content: space-around;
- 
+        width: 100%;
     }
-    
-    .fila5_servicios{
+
+    #carouselExampleIndicators{
         grid-area: s4;
+        align-items: center;
+    }
+
+    .carousel-inner{
+        width: 50%;
+    }
+
+    .fila5_servicios{
+        
         flex-direction: row;
         justify-content: space-around;
     }
     
-    .alquiler{
-        grid-area: s3;
-        width: 30%;
-        font-size: 25px; 
-        font-weight: bolder;
-        padding-top: 10px;
-    }
-    
-    .clases_ig{
-        grid-area: s4;
-        width: 25%;
-        font-size: 25px;
-        font-weight: bolder;
-        padding-top: 0px;  
-        padding-left: 20px;
-    }
-    
-    .entrenamiento{
-        grid-area: s5;
-        width: 30%;
-        font-size: 25px;
-        font-weight: bolder;
-        padding-top: 10px;
-        padding-right: 10px;
-    }
-    
-    .escuelita{
-        width: 30%;
-        font-size: 30px;
-        font-weight: bolder;
-        padding-top: 10px;
-    }
-
     .foto_serv2{
         height: 120%;
     }
@@ -927,31 +903,22 @@ a{
     letter-spacing: 1px;
     line-height: 20px;
     text-align: center;
-    padding-bottom: 20px;
 }
     
 .inscribite_torneos{
     align-self: center;
 }
-    
-.th_torneos{
-    border: 2px solid black;
-    font-family: 'Roboto';
-    color: brown;
-    text-align: center;
-}
-    
-.tabla_torneos td{
-    border:2px solid black;
-    font-family: 'Roboto';
-    color: brown;
-    text-align: center;
-}
 
-.jugadores_torneos{
+.table{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
     display: flex;
     justify-content: center;
-    align-content: center;
+}
+
+.tabla_body{
     padding-bottom: 20px;
 }
 
