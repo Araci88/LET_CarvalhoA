@@ -22,7 +22,10 @@
     align-content: center;
     text-align: center;
     list-style-type: none;
-    padding-left: 0%;
+}
+
+.logo_header{
+    padding-left: 6%;
 }
 
 .item_nav{
@@ -76,7 +79,6 @@ h3{
     list-style-type: none;
     font-size: 15px;
     text-align: center;
-    padding-left: 0%;
 }
  
 a{
@@ -258,7 +260,7 @@ a{
     
     .color_parrafos{
         font-size: 20px;
-        line-height: 1.5;
+        line-height: 1;
     }
     
     .quienes_somos{
@@ -271,7 +273,6 @@ a{
     /*GALERIA MOBILE FIRST*/
 
     .main_galeria{
-        background-color: rgb(233, 229, 229);
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -395,7 +396,7 @@ a{
     }
         
     .foto_alumnos8{
-        width: 100%;
+        width: 90%;
         height: 100%;
     }
         
@@ -557,6 +558,10 @@ a{
         width: 100%;
     }
 
+    .foto_alumnos8{
+        width: 100%;
+    }
+
     .fotos_pet{
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -643,7 +648,7 @@ a{
         background-position: center;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 60px 100px 500px 500px;
+        grid-template-rows: 60px 80px 300px 300px;
         grid-template-areas: "s1"
                              "s2"
                              "s3"
@@ -656,6 +661,8 @@ a{
         text-align: center;
         font-family: 'Bebas Neue', cursive;
         font-size: 30px;
+        margin-bottom: 0px;
+        padding-top: 10px;
     }
 
     .titulo_servicios{
@@ -670,7 +677,7 @@ a{
         background-color: rgb(255, 108, 55);
         color: rgb(17, 17, 17);
         text-align: center;
-        font-size: 20px;
+        font-size: 15px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
     }
@@ -682,6 +689,7 @@ a{
     .fila3_servicios{
         grid-area: s3;
         padding-top: 40px;
+        align-items: center;
     }
 
     .fila5_servicios{
@@ -813,7 +821,7 @@ a{
             background-color: rgb(255, 108, 55);
         }
     }
-    
+
     .fila3_servicios{
         grid-area: s3;
         flex-direction: row;
@@ -824,10 +832,12 @@ a{
     #carouselExampleIndicators{
         grid-area: s4;
         align-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     .carousel-inner{
-        width: 50%;
+        width: 40%;
     }
 
     .fila5_servicios{
@@ -976,7 +986,8 @@ a{
         color: black;
         text-align: center;
         font-family: 'Bebas Neue', cursive;
-        font-size: 50px;
+        font-size: 40px;
+        margin-left: 7%;
     }
 
     .div_contacto{
@@ -986,7 +997,9 @@ a{
     }
 
     .div_formulario{
+        width: 60%;
         align-self: center;
+        padding-left: 5%;
     }
 
     .leg_contacto{
@@ -997,11 +1010,9 @@ a{
     .fil_contacto{
         display: flex;
         flex-direction: column;
-        border-width: 5px;
         font-family: 'Roboto';
         font-weight: bold;
         text-align: center;
-        border-color: black;
     }
 
     .cont_seldni{
@@ -1010,33 +1021,42 @@ a{
     }
 
     .in_form{
-        width: 90%;
         font-family: 'Roboto';
         align-self: center;
     }
     
     .boton_form{
         width: 60%;
-        background-color: gray;
         font-family: 'Roboto';
-        font-weight: bold;
+        font-weight: light;
         margin-top: 7px;
         margin-bottom: 7px;
         align-self: center;
     }
 
+    .boton_formf{
+        align-self: center;
+    }
+
     .div_telefono{
-        margin-top: 30px;
+        margin-top: 20px;
         font-family: 'Roboto';
         font-weight: bolder;
         text-align: center;
         font-size: 20px;
-        line-height: 40px;
+        line-height: 20px;
+        padding-left: 5%;
+    }
+
+    .p_telefono{
+        margin-bottom: 10px;
+        color: black;
     }
 
     .maps_contacto{
         width: 80%;
-        height: 80%;
+        height: 50%;
+        margin-top: 10px;
     }
 
    /* CONTACTO PC*/
@@ -1070,7 +1090,7 @@ a{
     }
     
     .fil_contacto{
-        width: 30%;
+        width: 100%;
         border-width: 10px;
     }
     
@@ -1080,11 +1100,11 @@ a{
     }
 
     .cont_seldni{
-        width: 90%;
+        width: 100%;
     }
     
     .in_form{
-        width: 90%;
+        width: 100%;
     }
 
     .boton_form:hover{
