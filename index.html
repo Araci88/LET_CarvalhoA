@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;1,300&family=Splash&family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <title>La Ensenada Tenis</title>
@@ -18,41 +17,43 @@
 <body class="body_index">
 
     <header class="header">
-
-        <div class="logo_header">
-            <a class="logo_letra" href="index.html"> <h3>LET</h3> </a>
-        </div>
-
-        <nav class="nav">
-            <ul class="lista_nav">
-                <li class="item_nav"> <a href="index.html">HOME</a></li>
-                <li class="item_nav"> <a href="html/galeria.html">GALERÍA</a></li>
-                <li class="item_nav"> <a href="html/servicios.html">SERVICIOS</a></li>
-                <li class="item_nav"> <a href="html/torneos.html">TORNEOS</a></li>
-                <li class="item_nav"> <a href="html/contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="nav navbar sticky-top navbar-expand-lg bg-dark">
+            <div class="container-fluid cont_navbar">
+                <a class="navbar-brand" href="index.html">LET</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="lista_nav navbar-nav">
+                        <li class="item_nav"> <a class="nav-link" href="index.html">HOME</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="html/galeria.html">GALERÍA</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="html/servicios.html">SERVICIOS</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="html/torneos.html">TORNEOS</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="html/contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="main_index">
 
-        <div class="contenedor_tituloin animate__animated animate__heartBeat">
-        <h1 class="titulo_index"> LA ENSENADA TENIS </h1>
+        <div class="contenedor_tituloin animate__animated animate__heartBeat container">
+        <h1 class="titulo_index text-center"> LA ENSENADA TENIS </h1>
         </div>
-        <div class="logo_uno">
-            <img class="logo1 opacity-75" src="img/logo1.jpg" alt="logo">
+        <div class="logo_uno container">
+            <img class="logo1" src="img/logo1.jpg" alt="logo">
         </div>
     
         <div class="quienes_somos">
-            <h2 class="titulo2_index opacity-100"> Quienes Somos </h2>
-
-            <p class="color_parrafos opacity-100"> La Ensenada Tenis fue fundado el 7 de mayo del 2010 en la ciudad de Ensenada,</p> 
-            <p class="color_parrafos opacity-100"> desde ese día venimos recorriendo un camino de crecimiento</p> 
-            <p class="color_parrafos opacity-100"> que hoy nos permite brindarles no sólo un lugar de entrenamiento,</p> 
-            <p class="color_parrafos opacity-100"> sino también un lugar de encuentro.</p>
-            <p class="color_parrafos opacity-100"> Día a día seguimos esforzándonos para superarnos </p>
-            <p class="color_parrafos opacity-100"> y de esta manera poder continuar ofreciéndoles mayores alternativas de entrenamiento </p>   
-            <p class="color_parrafos opacity-100"> y de crecimiento tanto profesional como personal. </p>   
+            <h2 class="titulo2_index opacity-100 text-center"> Quienes Somos </h2>
+            <p class="color_parrafos opacity-100 text-center"> La Ensenada Tenis fue fundado el 7 de mayo del 2010 en la ciudad de Ensenada,</p> 
+            <p class="color_parrafos opacity-100 text-center"> desde ese día venimos recorriendo un camino de crecimiento</p> 
+            <p class="color_parrafos opacity-100 text-center"> que hoy nos permite brindarles no sólo un lugar de entrenamiento,</p> 
+            <p class="color_parrafos opacity-100 text-center"> sino también un lugar de encuentro.</p>
+            <p class="color_parrafos opacity-100 text-center"> Día a día seguimos esforzándonos para superarnos </p>
+            <p class="color_parrafos opacity-100 text-center"> y de esta manera poder continuar ofreciéndoles mayores alternativas de entrenamiento </p>   
+            <p class="color_parrafos opacity-100 text-center"> y de crecimiento tanto profesional como personal. </p>   
         </div>
 
     </main>

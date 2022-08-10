@@ -17,21 +17,23 @@
 <body class="body_galeria">
     
     <header class="header">
-
-        <div class="logo_header">
-            <a class="logo_letra" href="../index.html"> <h3>LET</h3> </a>
-        </div>
-
-        <nav class="nav">
-            <ul class="lista_nav">
-                <li class="item_nav"> <a href="../index.html">HOME</a></li>
-                <li class="item_nav"> <a href="galeria.html">GALERÍA</a></li>
-                <li class="item_nav"> <a href="servicios.html">SERVICIOS</a></li>
-                <li class="item_nav"> <a href="torneos.html">TORNEOS</a></li>
-                <li class="item_nav"> <a href="contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="nav navbar sticky-top navbar-expand-lg bg-dark">
+            <div class="container-fluid cont_navbar">
+                <a class="navbar-brand" href="../index.html">LET</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="lista_nav navbar-nav">
+                        <li class="item_nav"> <a class="nav-link" href="../index.html">HOME</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="galeria.html">GALERÍA</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="servicios.html">SERVICIOS</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="torneos.html">TORNEOS</a></li>
+                        <li class="item_nav"> <a class="nav-link" href="contacto.html">CONTACTO</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
 
     <main class="main_galeria bg-light bg-opacity-50">
@@ -44,33 +46,34 @@
             <h2 class="titulo2_galeria">El Club</h2>
         </div>
 
-        <div class="fotos_club">   
-            <div class="img_club1">
-                <img class="foto_club1 border border-danger rounded border-3 border-opacity-75" src="../img/dronearriba.jpg" alt="club desde arriba">           
+        <div class="fotos_club container-fluid">  
+            
+            <div class="row fila_uno">
+                <div class="img_club1 col-4">
+                    <img class="foto_club1 border border-danger rounded border-3 border-opacity-75" src="../img/dronearriba.jpg" alt="club desde arriba">           
+                </div>
+                <div class="img_club2 col-4">
+                    <img class="foto_club2 border border-danger rounded border-3 border-opacity-75" src="../img/drone1.jpg" alt="foto con drone">
+                </div>
+                <div class="img_club3 col-4">
+                    <img class="foto_club3 border border-danger rounded border-3 border-opacity-75" src="../img/cancha1edu.jpg" alt="cancha de tenis">
+                </div>
             </div>
 
-            <div class="img_club2">
-                <img class="foto_club2 border border-danger rounded border-3 border-opacity-75" src="../img/drone1.jpg" alt="foto con drone">
-            </div>
-
-            <div class="img_club3">
-                <img class="foto_club3 border border-danger rounded border-3 border-opacity-75" src="../img/cancha1edu.jpg" alt="cancha de tenis">
-            </div>
-
-            <div class="img_club4">
-                <img class="foto_club4 border border-danger rounded border-3 border-opacity-75" src="../img/Cancha3a.jpg" alt="club de tenis">                 
-            </div>
-
-            <div class="img_club5">
-                <img class="foto_club5 border border-danger rounded border-3 border-opacity-75" src="../img/Canchabar.jpg" alt="cancha de tenis">
-            </div>
-
-            <div class="img_club6">
-                <img class="foto_club6 border border-danger rounded border-3 border-opacity-75" src="../img/Bar2.jpg" alt="bar"> 
+            <div class="row fila_dos">
+                <div class="img_club4 col-4">
+                    <img class="foto_club4 border border-danger rounded border-3 border-opacity-75" src="../img/Cancha3a.jpg" alt="club de tenis">                 
+                </div>
+                <div class="img_club5 col-4">
+                    <img class="foto_club5 border border-danger rounded border-3 border-opacity-75" src="../img/Canchabar.jpg" alt="cancha de tenis">
+                </div>
+                <div class="img_club6 col-4">
+                    <img class="foto_club6 border border-danger rounded border-3 border-opacity-75" src="../img/Bar2.jpg" alt="bar"> 
+                </div>
             </div>
         </div>
 
-        <div class="video_club">
+        <div class="video_club container">
             <video controls class="videoclub1">
                 <source src="../img/Finalchico.mp4" type="video/mp4">
             </video>
@@ -80,17 +83,17 @@
             <h2 class="titulo2_galeria">Alumnos</h2>
         </div>
 
-        <div class="fotos_alumnos">
-            <div class="img_al7">
-                <img class="foto_alumnos7 border border-dark rounded border-3 border-opacity-75" src="../img/Alumnos1.jpg" alt="alumnos">                                      
-            </div>
-
-            <div class="img_al8">  
-                <img class="foto_alumnos8 border border-dark rounded border-3 border-opacity-75" src="../img/alumnos2.jpg" alt="alumnos">  
-            </div>
-
-            <div class="img_al9">
-                <img class="foto_alumnos9 border border-dark rounded border-3 border-opacity-75" src="../img/alumnos4.jpg" alt="alumnos">
+        <div class="fotos_alumnos container-fluid">
+            <div class="row">
+                <div class="img_al7 col-4">
+                    <img class="foto_alumnos7 border border-dark rounded border-3 border-opacity-75" src="../img/Alumnos1.jpg" alt="alumnos">                                      
+                </div>
+                <div class="img_al8 col-4">  
+                    <img class="foto_alumnos8 border border-dark rounded border-3 border-opacity-75" src="../img/alumnos2.jpg" alt="alumnos">  
+                </div>
+                <div class="img_al9 col-4">
+                    <img class="foto_alumnos9 border border-dark rounded border-3 border-opacity-75" src="../img/alumnos4.jpg" alt="alumnos">
+                </div>
             </div>
         </div>
 
@@ -98,17 +101,17 @@
             <h2 class="titulo2_galeria">Somos Pet Friendly</h2>
         </div>
 
-        <div class="fotos_pet">
-            <div class="img_pet10">              
-                <img class="foto_pet10 border border-success rounded border-3 border-opacity-75" src="../img/kratos2.jpeg" alt="perro kratos">
-            </div>
-
-            <div class="img_pet11">
-                <img class="foto_pet11 border border-success rounded border-3 border-opacity-75" src="../img/Igor1.jpg" alt="perro igor">
-            </div>
-
-            <div class="img_pet12">
-                <img class="foto_pet12 border border-success rounded border-3 border-opacity-75" src="../img/kraigor.jpeg" alt=" kratos e igor">
+        <div class="fotos_pet container-fluid">
+            <div class="row">
+                <div class="img_pet10 col-4">              
+                    <img class="foto_pet10 border border-success rounded border-3 border-opacity-75" src="../img/kratos2.jpeg" alt="perro kratos">
+                </div>
+                <div class="img_pet11 col-4">
+                    <img class="foto_pet11 border border-success rounded border-3 border-opacity-75" src="../img/Igor1.jpg" alt="perro igor">
+                </div>
+                <div class="img_pet12 col-4">
+                    <img class="foto_pet12 border border-success rounded border-3 border-opacity-75" src="../img/kraigor.jpeg" alt=" kratos e igor">
+                </div>
             </div>
         </div>    
     </main>
