@@ -1,0 +1,97 @@
+/* FOOTER MOBILE*/
+
+.footer{
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items:center;
+
+    .section_redes{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items:center;
+        padding-left: 0px;
+
+        .lista_footer{
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: 15px;
+            text-align: center;
+            padding-left: 0px;
+        }
+    }
+
+    .parrafo_footer{  
+        color: yellowgreen;
+        font-size: 15px;
+        font-family: 'Bebas Neue';
+    }
+    
+    .section_contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        color:yellowgreen;
+        font-family: 'Bebas Neue';
+        font-weight: lighter;
+        text-align: center;
+    
+        .p_contacto{
+            margin-bottom: 0px;
+        }
+    }
+}
+
+@media screen and (min-width: 600px){
+
+     /*FOOTER*/
+
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+
+        .section_redes{
+            width: 70%;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .titulo_footer{
+                padding-top: 1%;
+                padding-left: 5%;
+
+                .parrafo_footer{  
+                    font-size: 15px;
+                    margin-bottom: 0px;
+                    align-self: center;
+                }
+            }
+        }
+
+        .lista_footer{
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-around;
+            list-style-type: none;
+            font-size: 20px;
+            margin-bottom: 0px;
+            align-self: center;
+            &:hover{
+                transform: scale(1.3,1.3);
+            }
+        }
+
+        .section_contacto{
+            font-weight: lighter;
+            text-align: right;
+            padding-right: 1%;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+/*INDEX*/ 
+
+.main_index{
+    background-color: gray;
+    background-image: url("../img/fondoindex2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*CONTACTO*/
+
+.main_contacto{
+    background-color: gray;
+    background-image: url(../img/fondocontacto1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width: 500px){
+    .main_contacto{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+/*TORNEOS*/
+
+.main_torneos{
+    background-color: rgb(36, 34, 34);
+    background-image: url(../img/fondotorneos3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
