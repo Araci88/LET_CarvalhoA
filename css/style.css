@@ -204,9 +204,6 @@ a{
         background-color: brown;
     }
 
-
-/* GALERIA PC */
-
     .titulo1_galeria{
         font-size: 80px;
     }
@@ -237,32 +234,32 @@ a{
     }
 
     .foto_club1{
-        height: 90%;
+        height: 95%;
         width: 100%;
     }
 
     .foto_club2{
-        height: 90%;
+        height: 95%;
         width: 100%;
     }
 
     .foto_club3{
-        height: 90%;
+        height: 95%;
         width: 100%;
     }
 
     .foto_club4{
-        height: 80%;
+        height: 85%;
         width: 100%;
     }
 
     .foto_club5{
-        height: 80%;
+        height: 85%;
         width: 100%;
     }
 
     .foto_club6{
-        height: 80%;
+        height: 85%;
         width: 100%;
     }
 
@@ -276,14 +273,17 @@ a{
     }
 
     .foto_alumnos7{
+        height: 95%;
         width: 100%;
     }
 
     .foto_alumnos8{
+        height: 95%;
         width: 100%;
     }
 
     .foto_alumnos9{
+        height: 95%;
         width: 100%;
     }
 
@@ -292,16 +292,18 @@ a{
     }
 
     .foto_pet10{
+        height: 95%;
         width: 100%;
     }
 
     .foto_pet11{
+        height: 95%;
         width: 100%;
     }
 
     .foto_pet12{
         width: 100%;
-        height: 100%;
+        height: 95%;
     }
 
     .img_club1:hover{
@@ -355,170 +357,74 @@ a{
 
 /*BODY Y MAIN SERVICIOS*/
 
-/* SERVICIOS MOBILE */
-
     .main_servicios{
         background-color: rgb(236, 236, 236);
         background-image: url(../img/fondoserv1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 60px 80px 300px 300px;
-        grid-template-areas: "s1"
-                             "s2"
-                             "s3"
-                             "s4";
-        align-content: center;
     }
 
     .titulo1_servicios{
         color:  rgb(17, 17, 17);
         text-align: center;
         font-family: 'Bebas Neue', cursive;
-        font-size: 30px;
+        font-size: 80px;
         margin-bottom: 0px;
         padding-top: 10px;
     }
 
     .titulo_servicios{
-        grid-area: s1;
         background-image: url(../img/tituloservicios.jpg);
         background-position: center;
     }
 
     .parrafos_clases{
-        grid-area: s2;
         align-self: center;
         background-color: rgb(255, 108, 55);
         color: rgb(17, 17, 17);
         text-align: center;
-        font-size: 15px;
+        font-size: 25px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
+        animation-name: fondo_parrafos;
+        animation-duration: 5s;
+        animation-iteration-count: 2;
     }
 
     .p_clases{
         margin-bottom: 0px;
     }
 
-    .fila3_servicios{
-        grid-area: s3;
-        padding-top: 40px;
-        align-items: center;
+    :root{
+        --tipografia_p_card: 'Cormorant SC', serif;
+        --tamano_txt_card: 20px;
+        --grosor_txt_card: light;
+    }
+    
+    .card-text{
+        font-family: var(--tipografia_p_card);
+        font-size: var(--tamano_txt_card);
+        font-weight: var(--grosor_txt_card);
     }
 
-    .fila5_servicios{
-        grid-area: s4;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .card{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-self: center;
     }
 
-    .alquiler{
-        text-align: center;
-        font-family: 'Cormorant SC', serif;
-        font-size: 15px; 
-        font-weight: bold;
+    .bloque_card{
+        justify-items: center;
+
     }
 
-    .clases_ig{
-        text-align: center;
-        font-family: 'Cormorant SC', serif;
-        font-size: 15px; 
-        font-weight: bold;
-    }
-
-    .escuelita{
-        text-align: center;
-        font-family: 'Cormorant SC', serif;
-        font-size: 15px; 
-        font-weight: bold;
-    }
-
-    .entrenamiento{
-        text-align: center;
-        font-family: 'Cormorant SC', serif;
-        font-size: 15px; 
-        font-weight: bold;
-    }
-
-    .carousel-inner{
-        height: 80%;
-    }
-
-    .fotoserv2{
-        width: 55%;
-        height: 55%;
-        padding-left: 20px;
-    }
-
-    .foto_serv2{
-        width: 80%;
-        height: 80%;
-        border: 5px solid black;
-    }
-
-    .fotoserv4{
-        width: 50%;
-        height: 50%;
-    }
-
-    .foto_serv4{
-        width: 90%;
-        height: 90%;
-        border: 5px solid black;
-    }
-
-    .fotoserv5{
-        width: 50%;
-        height: 50%;
-    }
-
-    .foto_serv5{
-        width: 90%;
-        height: 90%;
-        border: 5px solid black;
-    }
-
-/* SERVICIOS PC*/
-
-@media screen and (min-width: 600px){
-
-    .main_servicios{
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 150px 200px 400px;
-        grid-template-areas: "s1"
-                             "s2"
-                             "s3"
-                             "s4";
-        align-content: space-around;
-        justify-content: space-around;
-        padding-bottom: 10px;
+    .clases_indimg{
+        height: 330px;
     }
 
     .animated__animated.animate__bounce{
         --animate-duration: 5s;
-    }
-    
-    .titulo1_servicios{
-        font-size: 80px;
-    }
-    
-    .titulo_servicios{
-        grid-area: s1;
-        background-repeat: repeat;
-    }
-    
-    .parrafos_clases{
-        grid-area: s2;
-        text-align: center;
-        font-weight: bolder;
-        font-size: 25px;
-        animation-name: fondo_parrafos;
-        animation-duration: 5s;
-        animation-iteration-count: 2;
     }
 
     @keyframes fondo_parrafos{
@@ -542,48 +448,6 @@ a{
             background-color: rgb(255, 108, 55);
         }
     }
-
-    .fila3_servicios{
-        grid-area: s3;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    #carouselExampleIndicators{
-        grid-area: s4;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-    }
-
-    .carousel-inner{
-        width: 40%;
-        height: 80%;
-        margin-bottom: 20px;
-    }
-
-    .carouser_item{
-        height: 80%;
-    }
-
-    .fila5_servicios{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .foto_serv2{
-        height: 90%;
-    }
-
-    .foto_serv4{
-        height: 100%;
-    }
-
-    .foto_serv5{
-        height: 100%;
-    }
-}
 
 /* BODY Y MAIN TORNEOS */
 
