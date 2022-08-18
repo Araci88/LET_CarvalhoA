@@ -6,77 +6,18 @@
 @import "titulos";
 @import "main";
 @import "contenedores_grales";
+@import "extend";
 
-/* BODY Y MAIN INDEX */
 
-/* MAIN INDEX */
+/* INDEX */
     
     .logo_uno{
         display: flex;
         justify-content: center;
     }
     
-    .color_parrafos{
-        color: rgb(188, 252, 61);
-        font-size: 20px;
-        font-family: 'roboto';
-        font-weight: light ;
-    }
 
-
-/* BODY Y MAIN GALERÍA */
-
-    .titulo1_galeria{
-        color:  rgb(17, 17, 17);
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 40px;
-    }
-        
-    .titulo_galeria{
-        background-image: url("../img/titulogaleria1.jpg");
-        background-repeat: repeat;
-        width: 100%;
-    }
-    
-    .titulos_gal{
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .titulo2_galeria{
-        color: rgb(188, 252, 61);
-        font-size: 30px;
-        text-align: center;
-        font-family: 'The Nautigal', cursive;
-        font-weight: bold;
-        background-color: brown;
-    }
-
-    .titulo1_galeria{
-        font-size: 80px;
-    }
-
-    .titulo_galeria{
-        height: 100px;
-        width: 100%;
-    }
-
-    .titulos_gal{
-        padding-bottom: 5px;
-        padding-top: 5px;
-    }
-
-    .titulo_el_club{
-        padding-top: 20px;
-        height: 100px;
-        width: 100%;
-    }
-
-    .titulo2_galeria{
-        font-size: 60px;
-    }
+/* GALERÍA */
 
     .fotos_club{
         margin-left: 0px;
@@ -156,122 +97,12 @@
         height: 95%;
     }
 
-    .img_club1:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_club2:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_club3:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_club4:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_club5:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_club6:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_al7:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_al8:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_al9:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_pet10:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_pet11:hover{
-        transform: scale(1.1,1.1);
-    }
-    
-    .img_pet12:hover{
-        transform: scale(1.1,1.1);
+    .fotos_gal:hover{
+        transform: scale(1.1,1.1); 
     }
 
-
-/*BODY Y MAIN SERVICIOS*/
-
-    .main_servicios{
-        background-color: rgb(236, 236, 236);
-        background-image: url(../img/fondoserv1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-
-    .titulo1_servicios{
-        color:  rgb(17, 17, 17);
-        text-align: center;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 80px;
-        margin-bottom: 0px;
-        padding-top: 10px;
-    }
-
-    .titulo_servicios{
-        background-image: url(../img/tituloservicios.jpg);
-        background-position: center;
-    }
-
-    .parrafos_clases{
-        align-self: center;
-        background-color: rgb(255, 108, 55);
-        color: rgb(17, 17, 17);
-        text-align: center;
-        font-size: 25px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: bold;
-        animation-name: fondo_parrafos;
-        animation-duration: 5s;
-        animation-iteration-count: 2;
-    }
-
-    .p_clases{
-        margin-bottom: 0px;
-    }
-
-    :root{
-        --tipografia_p_card: 'Cormorant SC', serif;
-        --tamano_txt_card: 20px;
-        --grosor_txt_card: light;
-    }
     
-    .card-text{
-        font-family: var(--tipografia_p_card);
-        font-size: var(--tamano_txt_card);
-        font-weight: var(--grosor_txt_card);
-    }
-
-    .card{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        align-self: center;
-    }
-
-    .bloque_card{
-        justify-items: center;
-
-    }
-
-    .clases_indimg{
-        height: 330px;
-    }
+/*SERVICIOS*/
 
     .animated__animated.animate__bounce{
         --animate-duration: 5s;
@@ -299,118 +130,23 @@
         }
     }
 
-/* BODY Y MAIN TORNEOS */
-
- /* TORNEOS MOBILE*/
-    
-.publi_torneos{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+/* TORNEOS */
 
 .foto_torneos1{
     width: 60%;
     align-self: center;
 }
-
 .foto_torneos2{
     width: 60%;
     align-self: center;
 }
-    
-.parrafo_torneos{
-    font-family: 'Bebas Neue';
-    font-size: 20px;
-    color: rgb(180, 240, 60);
-    letter-spacing: 1px;
-    line-height: 20px;
-    text-align: center;
-}
-    
-.inscribite_torneos{
-    align-self: center;
-}
-
-.table{
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 0px;
-    display: flex;
-    justify-content: center;
-}
-
-.tabla_body{
-    padding-bottom: 20px;
-}
-
-/* TORNEOS PC*/
 
 @media screen and (min-width: 500px){
-    
-    .publi_torneos{
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
     .foto_torneos1{
         width: 33%;
     }
     .foto_torneos2{
         width: 30%;
     }
-    
-    .parrafo_torneos{
-        font-size: 20px;
-        letter-spacing: 3px;
-        line-height: 25px;
-    }
-    
-    .inscribite_torneos{
-        margin-bottom: 20px;
-    }
 }
 
-/* BODY Y MAIN CONTACTOS */
-
-   /* CONTACTO MOBILE */
-
-    .div_telefono{
-        margin-top: 20px;
-        font-family: 'Roboto';
-        font-weight: bolder;
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    .p_telefono{
-        margin-bottom: 10px;
-        color: black;
-    }
-
-    .maps_contacto{
-        width: 80%;
-        height: 50%;
-        margin-top: 10px;
-    }
-
-   /* CONTACTO PC*/
-
-@media only screen and (min-width: 600px){
-   
-    .titulo_contacto{
-        font-size: 80px;
-    }
-    
-    .div_telefono{
-        grid-area: c2;
-    }
-    
-    .maps_contacto{
-        width: 100%;
-        padding-bottom: 10px;
-    }
-}

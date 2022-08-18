@@ -151,7 +151,7 @@ a {
 /*INDEX*/
 .titulo_index {
   color: #bcfc3d;
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 90px;
   padding-top: 30px;
   padding-bottom: 30px; }
@@ -163,21 +163,40 @@ a {
   font-weight: bold;
   line-height: 2; }
 
-/*CONTACTO*/
-.titulo_contacto {
-  font-family: 'Bebas Neuer';
-  color: black;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 40px; }
+/*GALERIA*/
+.titulo_galeria {
+  background-image: url(../img/titulogaleria1.png);
+  background-repeat: repeat;
+  width: 100%;
+  height: 100px; }
+  .titulo_galeria .titulo1_galeria {
+    font-size: 80px; }
+
+.titulos_gal {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .titulos_gal .titulo2_galeria {
+    color: #bcfc3d;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'The Nautigal', cursive;
+    font-weight: bold;
+    background-color: brown; }
+
+/*SERVICIOS*/
+.titulo_servicios {
+  background-image: url(../img/tituloservicios.png);
+  background-repeat: repeat; }
+  .titulo_servicios .titulo1_servicios {
+    font-size: 80px;
+    margin-bottom: 0px;
+    padding-top: 10px; }
 
 /*TORNEOS*/
 .titulo_torneos {
-  color: #111111;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 60px;
-  background-image: url(../img/titulotorneos.jpg);
+  font-size: 40px;
+  background-image: url(../img/titulotorneos.png);
   background-position: center;
   margin-bottom: 10px; }
 
@@ -198,10 +217,18 @@ a {
     font-size: 40px;
     padding-bottom: 20px; } }
 
+/*CONTACTO*/
+.titulo_contacto {
+  font-size: 40px; }
+
+@media only screen and (min-width: 600px) {
+  .titulo_contacto {
+    font-size: 80px; } }
+
 /*INDEX*/
 .main_index {
   background-color: gray;
-  background-image: url("../img/fondoindex2.jpg");
+  background-image: url(../img/fondoindex2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -209,7 +236,7 @@ a {
 /*CONTACTO*/
 .main_contacto {
   background-color: gray;
-  background-image: url(../img/fondocontacto1.jpg);
+  background-image: url(../img/fondocontacto1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -223,22 +250,94 @@ a {
 /*TORNEOS*/
 .main_torneos {
   background-color: #242222;
-  background-image: url(../img/fondotorneos3.jpg);
+  background-image: url(../img/fondotorneos3.png);
   background-repeat: no-repeat;
   background-size: cover; }
 
-/*INDEX*/
+/*SERVICIOS*/
+.main_servicios {
+  background-color: #ececec;
+  background-image: url(../img/fondoserv1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+/*INDEX: contenedor donde está el párrafo de presentación*/
 .quienes_somos {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  .quienes_somos .color_parrafos {
+    color: #bcfc3d;
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: light; }
 
-/*CONTACTO*/
+/* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
+.parrafos_clases {
+  align-self: center;
+  background-color: #ff6c37;
+  color: #111111;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  animation-name: fondo_parrafos;
+  animation-duration: 5s;
+  animation-iteration-count: 2; }
+  .parrafos_clases .p_clases {
+    margin-bottom: 0px; }
+
+/*TORNEOS: contenedor con los flyer de los próximos torneos*/
+.publi_torneos {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+/* contenedor con los párrafos donde está el contacto para inscribirte*/
+.inscribite_torneos {
+  align-self: center; }
+  .inscribite_torneos .parrafo_torneos {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+    color: #b4f03c;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-align: center; }
+
+/* media de los contenedores de torneos*/
+@media screen and (min-width: 500px) {
+  .publi_torneos {
+    flex-direction: row;
+    justify-content: space-around; }
+  .inscribite_torneos {
+    margin-bottom: 20px; }
+    .inscribite_torneos .parrafo_torneos {
+      font-size: 20px;
+      letter-spacing: 3px;
+      line-height: 25px; } }
+
+/*CONTACTO: parte del contenedor donde está el teléfono, el mail y el mapa + @media*/
 .div_contacto {
   display: flex;
   flex-direction: column;
   justify-content: space-around; }
+  .div_contacto .div_telefono {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px; }
+    .div_contacto .div_telefono .p_telefono {
+      margin-bottom: 10px;
+      color: black; }
+    .div_contacto .div_telefono .maps_contacto {
+      width: 80%;
+      height: 50%;
+      margin-top: 10px; }
 
 @media screen and (min-width: 600px) {
   .div_contacto {
@@ -246,64 +345,23 @@ a {
     grid-template-columns: 40% 40%;
     grid-template-rows: 100%;
     grid-template-areas: "c1 c2";
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+    .div_contacto .maps_contacto {
+      width: 100%;
+      padding-bottom: 10px; } }
 
-/* BODY Y MAIN INDEX */
-/* MAIN INDEX */
+/*TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/
+.tit_principal, .titulo_galeria .titulo1_galeria, .titulo_servicios .titulo1_servicios, .titulo_torneos, .titulo_contacto {
+  color: #111111;
+  font-family: 'Bebas Neue', cursive;
+  text-align: center; }
+
+/* INDEX */
 .logo_uno {
   display: flex;
   justify-content: center; }
 
-.color_parrafos {
-  color: #bcfc3d;
-  font-size: 20px;
-  font-family: 'roboto';
-  font-weight: light; }
-
-/* BODY Y MAIN GALERÍA */
-.titulo1_galeria {
-  color: #111111;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 40px; }
-
-.titulo_galeria {
-  background-image: url("../img/titulogaleria1.jpg");
-  background-repeat: repeat;
-  width: 100%; }
-
-.titulos_gal {
-  width: 100%;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.titulo2_galeria {
-  color: #bcfc3d;
-  font-size: 30px;
-  text-align: center;
-  font-family: 'The Nautigal', cursive;
-  font-weight: bold;
-  background-color: brown; }
-
-.titulo1_galeria {
-  font-size: 80px; }
-
-.titulo_galeria {
-  height: 100px;
-  width: 100%; }
-
-.titulos_gal {
-  padding-bottom: 5px;
-  padding-top: 5px; }
-
-.titulo_el_club {
-  padding-top: 20px;
-  height: 100px;
-  width: 100%; }
-
-.titulo2_galeria {
-  font-size: 60px; }
-
+/* GALERÍA */
 .fotos_club {
   margin-left: 0px;
   margin-right: 0px; }
@@ -366,98 +424,10 @@ a {
   width: 100%;
   height: 95%; }
 
-.img_club1:hover {
+.fotos_gal:hover {
   transform: scale(1.1, 1.1); }
 
-.img_club2:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_club3:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_club4:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_club5:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_club6:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_al7:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_al8:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_al9:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_pet10:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_pet11:hover {
-  transform: scale(1.1, 1.1); }
-
-.img_pet12:hover {
-  transform: scale(1.1, 1.1); }
-
-/*BODY Y MAIN SERVICIOS*/
-.main_servicios {
-  background-color: #ececec;
-  background-image: url(../img/fondoserv1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
-
-.titulo1_servicios {
-  color: #111111;
-  text-align: center;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 80px;
-  margin-bottom: 0px;
-  padding-top: 10px; }
-
-.titulo_servicios {
-  background-image: url(../img/tituloservicios.jpg);
-  background-position: center; }
-
-.parrafos_clases {
-  align-self: center;
-  background-color: #ff6c37;
-  color: #111111;
-  text-align: center;
-  font-size: 25px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  animation-name: fondo_parrafos;
-  animation-duration: 5s;
-  animation-iteration-count: 2; }
-
-.p_clases {
-  margin-bottom: 0px; }
-
-:root {
-  --tipografia_p_card: 'Cormorant SC', serif;
-  --tamano_txt_card: 20px;
-  --grosor_txt_card: light; }
-
-.card-text {
-  font-family: var(--tipografia_p_card);
-  font-size: var(--tamano_txt_card);
-  font-weight: var(--grosor_txt_card); }
-
-.card {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  align-self: center; }
-
-.bloque_card {
-  justify-items: center; }
-
-.clases_indimg {
-  height: 330px; }
-
+/*SERVICIOS*/
 .animated__animated.animate__bounce {
   --animate-duration: 5s; }
 
@@ -473,14 +443,7 @@ a {
   100% {
     background-color: #ff6c37; } }
 
-/* BODY Y MAIN TORNEOS */
-/* TORNEOS MOBILE*/
-.publi_torneos {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
+/* TORNEOS */
 .foto_torneos1 {
   width: 60%;
   align-self: center; }
@@ -489,69 +452,8 @@ a {
   width: 60%;
   align-self: center; }
 
-.parrafo_torneos {
-  font-family: 'Bebas Neue';
-  font-size: 20px;
-  color: #b4f03c;
-  letter-spacing: 1px;
-  line-height: 20px;
-  text-align: center; }
-
-.inscribite_torneos {
-  align-self: center; }
-
-.table {
-  width: 100%;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 0px;
-  display: flex;
-  justify-content: center; }
-
-.tabla_body {
-  padding-bottom: 20px; }
-
-/* TORNEOS PC*/
 @media screen and (min-width: 500px) {
-  .publi_torneos {
-    flex-direction: row;
-    justify-content: space-around; }
   .foto_torneos1 {
     width: 33%; }
   .foto_torneos2 {
-    width: 30%; }
-  .parrafo_torneos {
-    font-size: 20px;
-    letter-spacing: 3px;
-    line-height: 25px; }
-  .inscribite_torneos {
-    margin-bottom: 20px; } }
-
-/* BODY Y MAIN CONTACTOS */
-/* CONTACTO MOBILE */
-.div_telefono {
-  margin-top: 20px;
-  font-family: 'Roboto';
-  font-weight: bolder;
-  text-align: center;
-  font-size: 20px;
-  line-height: 20px; }
-
-.p_telefono {
-  margin-bottom: 10px;
-  color: black; }
-
-.maps_contacto {
-  width: 80%;
-  height: 50%;
-  margin-top: 10px; }
-
-/* CONTACTO PC*/
-@media only screen and (min-width: 600px) {
-  .titulo_contacto {
-    font-size: 80px; }
-  .div_telefono {
-    grid-area: c2; }
-  .maps_contacto {
-    width: 100%;
-    padding-bottom: 10px; } }
+    width: 30%; } }

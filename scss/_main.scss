@@ -2,7 +2,7 @@
 
 .main_index{
     background-color: gray;
-    background-image: url("../img/fondoindex2.jpg");
+    background-image: url(../img/fondoindex2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -12,7 +12,7 @@
 
 .main_contacto{
     background-color: gray;
-    background-image: url(../img/fondocontacto1.jpg);
+    background-image: url(../img/fondocontacto1.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -30,8 +30,18 @@
 
 .main_torneos{
     background-color: rgb(36, 34, 34);
-    background-image: url(../img/fondotorneos3.jpg);
+    background-image: url(../img/fondotorneos3.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/*SERVICIOS*/
+
+.main_servicios{
+    background-color: rgb(236, 236, 236);
+    background-image: url(../img/fondoserv1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 

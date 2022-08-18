@@ -1,19 +1,91 @@
-/*INDEX*/ 
-
+/*INDEX: contenedor donde está el párrafo de presentación*/ 
 .quienes_somos{
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    .color_parrafos{
+        color: rgb(188, 252, 61);
+        font-size: 20px;
+        font-family: 'roboto';
+        font-weight: light;
+    }
 } 
 
+/* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
+.parrafos_clases{
+    align-self: center;
+    background-color: rgb(255, 108, 55);
+    color: rgb(17, 17, 17);
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    animation-name: fondo_parrafos;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
+    .p_clases{
+        margin-bottom: 0px;
+    }    
+}
 
-/*CONTACTO*/
+/*TORNEOS: contenedor con los flyer de los próximos torneos*/
+.publi_torneos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* contenedor con los párrafos donde está el contacto para inscribirte*/ 
+.inscribite_torneos{
+    align-self: center;
+    .parrafo_torneos{
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        color: rgb(180, 240, 60);
+        letter-spacing: 1px;
+        line-height: 20px;
+        text-align: center;
+    }
+}
+/* media de los contenedores de torneos*/
+@media screen and (min-width: 500px){
+    .publi_torneos{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .inscribite_torneos{
+        margin-bottom: 20px;
+        .parrafo_torneos{
+            font-size: 20px;
+            letter-spacing: 3px;
+            line-height: 25px;
+        }
+    }
+}
 
+/*CONTACTO: parte del contenedor donde está el teléfono, el mail y el mapa + @media*/
 .div_contacto{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    .div_telefono{
+        margin-top: 20px;
+        font-family: 'Roboto';
+        font-weight: bolder;
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+    .p_telefono{
+        margin-bottom: 10px;
+        color: black;
+    }
+    .maps_contacto{
+        width: 80%;
+        height: 50%;
+        margin-top: 10px;
+    }
+    }
 }
 
 @media screen and (min-width: 600px){
@@ -23,5 +95,10 @@
         grid-template-rows: 100%;
         grid-template-areas: "c1 c2";
         justify-content: space-evenly;
+
+        .maps_contacto{
+            width: 100%;
+            padding-bottom: 10px;
+        }
     }
 }
