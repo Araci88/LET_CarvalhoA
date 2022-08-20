@@ -1,7 +1,16 @@
-/*TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/ 
+/*Agrego extend a TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/ 
 
 .tit_principal{
     color: rgb(17, 17, 17);
     font-family: 'Bebas Neue', cursive;
     text-align: center;
+}
+
+/* Extend incorporado a las listas del nav y el footer */
+
+.links_navfoot{
+    text-decoration: none;
+    color:yellowgreen;
+    font-family: 'Bebas Neue';
+    font-weight: lighter;
 }

@@ -3,8 +3,12 @@
     font-size: 40px;
 }
 
+.item_nav:hover{
+    transform: scale(1.2,1.1);
+}
+
 .nav-link{
-    color: yellowgreen;
+    @extend .links_navfoot;
     font-size: 30px;
 }
 

@@ -1,16 +1,31 @@
-/*INDEX: contenedor donde está el párrafo de presentación*/ 
+/*INDEX: contenedor donde está el párrafo de presentación y las redes sociales*/ 
 .quienes_somos{
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    .color_parrafos{
-        color: rgb(188, 252, 61);
-        font-size: 20px;
-        font-family: 'roboto';
-        font-weight: light;
+}
+
+.cont_tit_redes{
+    height: 100px;
+}
+
+.contenedor_redes_index{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 200px;
+    .bttn:hover{
+        transform: scale(2,2);
     }
-} 
+        .bi_index{
+            color: white;
+            font-size: 60px;
+            text-decoration: none;
+            align-self: center;
+        }
+}
+
 
 /* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
 .parrafos_clases{

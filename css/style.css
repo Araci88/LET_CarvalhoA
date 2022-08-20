@@ -4,18 +4,14 @@
   padding: 0%;
   box-sizing: border-box; }
 
-a {
-  text-decoration: none;
-  color: yellowgreen;
-  font-family: 'Bebas Neue';
-  font-weight: lighter; }
-
 .navbar-brand {
   color: yellowgreen;
   font-size: 40px; }
 
+.item_nav:hover {
+  transform: scale(1.2, 1.1); }
+
 .nav-link {
-  color: yellowgreen;
   font-size: 30px; }
 
 #navbarNav {
@@ -44,7 +40,8 @@ a {
       list-style-type: none;
       font-size: 15px;
       text-align: center;
-      padding-left: 0px; }
+      padding-left: 0px;
+      color: yellowgreen; }
   .footer .parrafo_footer {
     color: yellowgreen;
     font-size: 15px;
@@ -61,7 +58,7 @@ a {
       margin-bottom: 0px; }
 
 @media screen and (min-width: 600px) {
-  /*FOOTER*/
+  /*FOOTER PC*/
   .footer {
     flex-direction: row;
     justify-content: space-between;
@@ -74,7 +71,7 @@ a {
         padding-top: 1%;
         padding-left: 5%; }
         .footer .section_redes .titulo_footer .parrafo_footer {
-          font-size: 15px;
+          font-size: 20px;
           margin-bottom: 0px;
           align-self: center; }
     .footer .lista_footer {
@@ -85,8 +82,10 @@ a {
       font-size: 20px;
       margin-bottom: 0px;
       align-self: center; }
-      .footer .lista_footer:hover {
-        transform: scale(1.3, 1.3); }
+      .footer .lista_footer .lista_foot:hover {
+        transform: scale(1.1, 1.1); }
+      .footer .lista_footer .bi_footer {
+        font-size: 30px; }
     .footer .section_contacto {
       font-weight: lighter;
       text-align: right;
@@ -114,7 +113,7 @@ a {
     .div_formulario .fil_contacto .boton_form {
       width: 60%;
       font-family: 'Roboto';
-      font-size: 10px;
+      font-size: 15px;
       font-weight: light;
       margin-top: 7px;
       margin-bottom: 7px;
@@ -163,6 +162,14 @@ a {
   font-weight: bold;
   line-height: 2; }
 
+.titulo_redes {
+  color: black;
+  background-color: #bcfc3d;
+  font-family: "Bebas Neue", cursive;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 0px; }
+
 /*GALERIA*/
 .titulo_galeria {
   background-image: url(../img/titulogaleria1.png);
@@ -186,7 +193,7 @@ a {
 
 /*SERVICIOS*/
 .titulo_servicios {
-  background-image: url(../img/tituloservicios.png);
+  background-image: url(../img/tituloservicios1.png);
   background-repeat: repeat; }
   .titulo_servicios .titulo1_servicios {
     font-size: 80px;
@@ -201,7 +208,7 @@ a {
   margin-bottom: 10px; }
 
 .titulo2_torneos {
-  color: #111111;
+  color: #b4f03c;
   text-align: center;
   font-family: 'roboto';
   font-weight: bold;
@@ -228,7 +235,7 @@ a {
 /*INDEX*/
 .main_index {
   background-color: gray;
-  background-image: url(../img/fondoindex2.png);
+  background-image: url(../img/fondoindex3.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -241,12 +248,6 @@ a {
   background-size: cover;
   background-position: center; }
 
-@media screen and (min-width: 500px) {
-  .main_contacto {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; } }
-
 /*TORNEOS*/
 .main_torneos {
   background-color: #242222;
@@ -257,22 +258,44 @@ a {
 /*SERVICIOS*/
 .main_servicios {
   background-color: #ececec;
-  background-image: url(../img/fondoserv1.png);
+  background-image: url(../img/fondoserv.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
 
-/*INDEX: contenedor donde está el párrafo de presentación*/
+/*TORNEOS tabla de jugadores*/
+.table {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px; }
+  .table .tabla_body {
+    padding-bottom: 20px; }
+
+/*INDEX: contenedor donde está el párrafo de presentación y las redes sociales*/
 .quienes_somos {
   padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  .quienes_somos .color_parrafos {
-    color: #bcfc3d;
-    font-size: 20px;
-    font-family: 'roboto';
-    font-weight: light; }
+
+.cont_tit_redes {
+  height: 100px; }
+
+.contenedor_redes_index {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 200px; }
+  .contenedor_redes_index .bttn:hover {
+    transform: scale(2, 2); }
+  .contenedor_redes_index .bi_index {
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
+    align-self: center; }
 
 /* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
 .parrafos_clases {
@@ -350,11 +373,54 @@ a {
       width: 100%;
       padding-bottom: 10px; } }
 
-/*TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/
+/*Agrego extend a TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/
 .tit_principal, .titulo_galeria .titulo1_galeria, .titulo_servicios .titulo1_servicios, .titulo_torneos, .titulo_contacto {
   color: #111111;
   font-family: 'Bebas Neue', cursive;
   text-align: center; }
+
+/* Extend incorporado a las listas del nav y el footer */
+.links_navfoot, .nav-link, .footer .section_redes .lista_footer .link_foot {
+  text-decoration: none;
+  color: yellowgreen;
+  font-family: 'Bebas Neue';
+  font-weight: lighter; }
+
+/* MIXIN para los botones del index con las redes sociales*/
+.bttn__ig {
+  background-color: #ff0095;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  align-self: center; }
+
+.bttn__tw {
+  background-color: #4d4dff;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  align-self: center; }
+
+.bttn__fb {
+  background-color: #0f0fff;
+  width: 100px;
+  height: 100px;
+  opacity: 0.7;
+  align-self: center; }
+
+/* Mixin para los parrafos del index y la firma de LET*/
+.color_parrafos {
+  color: #bcfc3d;
+  font-size: 20px;
+  font-family: 'roboto';
+  font-weight: light; }
+
+.firma_let {
+  color: #bcfc3d;
+  font-size: 40px;
+  font-family: 'roboto';
+  font-weight: light;
+  font-weight: bolder; }
 
 /* INDEX */
 .logo_uno {
@@ -365,37 +431,30 @@ a {
 .fotos_club {
   margin-left: 0px;
   margin-right: 0px; }
-
-.foto_club1 {
-  height: 95%;
-  width: 100%; }
-
-.foto_club2 {
-  height: 95%;
-  width: 100%; }
-
-.foto_club3 {
-  height: 95%;
-  width: 100%; }
-
-.foto_club4 {
-  height: 85%;
-  width: 100%; }
-
-.foto_club5 {
-  height: 85%;
-  width: 100%; }
-
-.foto_club6 {
-  height: 85%;
-  width: 100%; }
+  .fotos_club .foto_club1 {
+    height: 95%;
+    width: 100%; }
+  .fotos_club .foto_club2 {
+    height: 95%;
+    width: 100%; }
+  .fotos_club .foto_club3 {
+    height: 95%;
+    width: 100%; }
+  .fotos_club .foto_club4 {
+    height: 85%;
+    width: 100%; }
+  .fotos_club .foto_club5 {
+    height: 85%;
+    width: 100%; }
+  .fotos_club .foto_club6 {
+    height: 85%;
+    width: 100%; }
 
 .video_club {
   margin-top: 20px; }
-
-.videoclub1 {
-  width: 100%;
-  height: 80%; }
+  .video_club .videoclub1 {
+    width: 100%;
+    height: 80%; }
 
 .foto_alumnos7 {
   height: 95%;
@@ -411,21 +470,33 @@ a {
 
 .fotos_pet {
   padding-bottom: 10px; }
-
-.foto_pet10 {
-  height: 95%;
-  width: 100%; }
-
-.foto_pet11 {
-  height: 95%;
-  width: 100%; }
-
-.foto_pet12 {
-  width: 100%;
-  height: 95%; }
+  .fotos_pet .foto_pet10 {
+    height: 95%;
+    width: 100%; }
+  .fotos_pet .foto_pet11 {
+    height: 95%;
+    width: 100%; }
+  .fotos_pet .foto_pet12 {
+    height: 95%;
+    width: 100%; }
 
 .fotos_gal:hover {
   transform: scale(1.1, 1.1); }
+
+/* TORNEOS */
+.foto_torneos1 {
+  width: 60%;
+  align-self: center; }
+
+.foto_torneos2 {
+  width: 60%;
+  align-self: center; }
+
+@media screen and (min-width: 500px) {
+  .foto_torneos1 {
+    width: 33%; }
+  .foto_torneos2 {
+    width: 30%; } }
 
 /*SERVICIOS*/
 .animated__animated.animate__bounce {
@@ -442,18 +513,3 @@ a {
     background-color: #64d360; }
   100% {
     background-color: #ff6c37; } }
-
-/* TORNEOS */
-.foto_torneos1 {
-  width: 60%;
-  align-self: center; }
-
-.foto_torneos2 {
-  width: 60%;
-  align-self: center; }
-
-@media screen and (min-width: 500px) {
-  .foto_torneos1 {
-    width: 33%; }
-  .foto_torneos2 {
-    width: 30%; } }

@@ -16,6 +16,15 @@
     line-height: 2;
 }
 
+.titulo_redes{
+    color: black;
+    background-color: rgb(188, 252, 61);
+    font-family: $tipografia_titulo_principal;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
 /*GALERIA*/
 
 .titulo_galeria{
@@ -23,7 +32,6 @@
     background-repeat: repeat;
     width: 100%;
     height: 100px;
-
     .titulo1_galeria{
         @extend .tit_principal;
         font-size: 80px;
@@ -34,7 +42,6 @@
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-
     .titulo2_galeria{
         color: rgb(188, 252, 61);
         font-size: 60px;
@@ -48,9 +55,8 @@
 /*SERVICIOS*/
 
 .titulo_servicios{
-    background-image: url(../img/tituloservicios.png);
+    background-image: url(../img/tituloservicios1.png);
     background-repeat:repeat;
-
     .titulo1_servicios{
         @extend .tit_principal;
         font-size: 80px;
@@ -70,7 +76,7 @@
 }
 
 .titulo2_torneos{
-    color: rgb(17, 17, 17);
+    color: rgb(180, 240, 60);
     text-align: center;
     font-family: 'roboto';
     font-weight: bold; 
@@ -84,7 +90,6 @@
         margin-bottom: 20px;
         padding-bottom: 20px;
     }
-    
     .titulo2_torneos{
         font-size: 40px;
         padding-bottom: 20px;

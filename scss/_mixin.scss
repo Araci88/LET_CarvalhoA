@@ -1,0 +1,36 @@
+/* MIXIN para los botones del index con las redes sociales*/
+@mixin estilo_bttn ($fondo){
+    background-color: $fondo;
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+    align-self: center;
+}
+
+.bttn__ig{
+    @include estilo_bttn (rgb(255, 0, 149));
+}
+
+.bttn__tw{
+    @include estilo_bttn (rgb(77, 77, 255));
+}
+
+.bttn__fb{
+    @include estilo_bttn (rgb(15, 15, 255));
+}
+
+/* Mixin para los parrafos del index y la firma de LET*/
+@mixin parrafos_index ($tamanio){
+    color: rgb(188, 252, 61);
+    font-size: $tamanio;
+    font-family: 'roboto';
+    font-weight: light;
+}
+
+.color_parrafos{
+    @include parrafos_index (20px);
+}
+.firma_let{
+    @include parrafos_index (40px);
+    font-weight: bolder;
+}

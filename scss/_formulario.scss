@@ -4,85 +4,69 @@
     .div_formulario{
         width: 60%;
         align-self: center;
-    
         .fil_contacto{
             display: flex;
             flex-direction: column;
             font-family: 'Roboto';
             font-weight: bold;
             text-align: center;
-    
             .leg_contacto{
                 font-family: 'The Nautigal', cursive;
                 font-size: 30px;
             }
-
             .cont_seldni{
                 width: 90%;
                 align-self: center;
             }
-
             .in_form{
                 font-family: 'Roboto';
                 align-self: center;
             }
-
             .boton_form{
                 width: 60%;
                 font-family: 'Roboto';
-                font-size: 10px;
+                font-size: 15px;
                 font-weight: light;
                 margin-top: 7px;
                 margin-bottom: 7px;
                 align-self: center;
-            }
-        
+            }      
             .boton_formf{
                 align-self: center;
             }
         }
     }
 
-
 @media screen and(min-width:500px){
     .div_formulario{
         grid-area: c1;
         padding-bottom: 20px;
-
         .fil_contacto{
             width: 100%;
             border-width: 10px;
-
             .leg_contacto{
                 font-size: 50px;
             }
-
             .cont_label{
                 padding-top: 2px;
                 padding-bottom: 2px;
             }
-
             .cont_seldni{
                 width: 100%;
             }
-
             .in_form{
                 width: 100%;
             }
-
             .boton_form:hover{
                 transform: scale(1.1,1.1);
-            }
-            
+            }          
             .boton_formf:hover{
                 transform: scale(1,1);
             }
-            
             .check_label{
                 padding-top: 7px;
                 padding-bottom: 7px;
-            }
-            
+            }          
             .in_checkbox{
                 margin-bottom: 10px;
             }

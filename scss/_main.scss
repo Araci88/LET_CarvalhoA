@@ -2,7 +2,7 @@
 
 .main_index{
     background-color: gray;
-    background-image: url(../img/fondoindex2.png);
+    background-image: url(../img/fondoindex3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,14 +18,6 @@
     background-position: center;
 }
 
-@media screen and (min-width: 500px){
-    .main_contacto{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-}
-
 /*TORNEOS*/
 
 .main_torneos{
@@ -39,7 +31,7 @@
 
 .main_servicios{
     background-color: rgb(236, 236, 236);
-    background-image: url(../img/fondoserv1.png);
+    background-image: url(../img/fondoserv.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
