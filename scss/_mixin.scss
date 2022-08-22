@@ -10,11 +10,9 @@
 .bttn__ig{
     @include estilo_bttn (rgb(255, 0, 149));
 }
-
 .bttn__tw{
     @include estilo_bttn (rgb(77, 77, 255));
 }
-
 .bttn__fb{
     @include estilo_bttn (rgb(15, 15, 255));
 }

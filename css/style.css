@@ -8,14 +8,14 @@
   color: yellowgreen;
   font-size: 40px; }
 
+#navbarNav {
+  justify-content: end; }
+
 .item_nav:hover {
   transform: scale(1.2, 1.1); }
 
 .nav-link {
   font-size: 30px; }
-
-#navbarNav {
-  justify-content: end; }
 
 /* FOOTER MOBILE*/
 .footer {
@@ -207,6 +207,9 @@
   background-position: center;
   margin-bottom: 10px; }
 
+.titulo1_torneos {
+  font-size: 30px; }
+
 .titulo2_torneos {
   color: #b4f03c;
   text-align: center;
@@ -220,6 +223,8 @@
     font-size: 80px;
     margin-bottom: 20px;
     padding-bottom: 20px; }
+  .titulo1_torneos {
+    font-size: 50px; }
   .titulo2_torneos {
     font-size: 40px;
     padding-bottom: 20px; } }
@@ -374,7 +379,7 @@
       padding-bottom: 10px; } }
 
 /*Agrego extend a TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/
-.tit_principal, .titulo_galeria .titulo1_galeria, .titulo_servicios .titulo1_servicios, .titulo_torneos, .titulo_contacto {
+.tit_principal, .titulo_galeria .titulo1_galeria, .titulo_servicios .titulo1_servicios, .titulo_torneos, .titulo1_torneos, .titulo_contacto {
   color: #111111;
   font-family: 'Bebas Neue', cursive;
   text-align: center; }
