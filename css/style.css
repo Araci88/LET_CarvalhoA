@@ -6,7 +6,8 @@
 
 .navbar-brand {
   color: yellowgreen;
-  font-size: 40px; }
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive; }
 
 #navbarNav {
   justify-content: end; }
@@ -424,7 +425,6 @@
   color: #bcfc3d;
   font-size: 40px;
   font-family: 'roboto';
-  font-weight: light;
   font-weight: bolder; }
 
 /* INDEX */
@@ -456,10 +456,11 @@
     width: 100%; }
 
 .video_club {
-  margin-top: 20px; }
+  margin-top: 20px;
+  height: 500px; }
   .video_club .videoclub1 {
     width: 100%;
-    height: 80%; }
+    height: 100%; }
 
 .foto_alumnos7 {
   height: 95%;

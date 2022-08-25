@@ -21,12 +21,12 @@
 @mixin parrafos_index ($tamanio){
     color: rgb(188, 252, 61);
     font-size: $tamanio;
-    font-family: 'roboto';
-    font-weight: light;
+    font-family: 'roboto';  
 }
 
 .color_parrafos{
     @include parrafos_index (20px);
+    font-weight: light;
 }
 .firma_let{
     @include parrafos_index (40px);
