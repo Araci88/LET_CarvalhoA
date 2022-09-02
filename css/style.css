@@ -4,19 +4,27 @@
   padding: 0%;
   box-sizing: border-box; }
 
+body {
+  overflow-x: hidden; }
+
 .navbar-brand {
   color: yellowgreen;
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Bebas Neue", cursive; }
 
 #navbarNav {
   justify-content: end; }
 
-.item_nav:hover {
-  transform: scale(1.2, 1.1); }
-
 .nav-link {
-  font-size: 30px; }
+  font-size: 40px; }
+
+@media screen and (min-width: 500px) {
+  .item_nav:hover {
+    transform: scale(1.2, 1.1); }
+  .navbar-brand {
+    padding-left: 10%; }
+  .navbar-collapse {
+    padding-right: 10%; } }
 
 /* FOOTER MOBILE*/
 .footer {
@@ -67,7 +75,8 @@
     .footer .section_redes {
       width: 70%;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      padding-left: 10%; }
       .footer .section_redes .titulo_footer {
         padding-top: 1%;
         padding-left: 5%; }
@@ -90,7 +99,7 @@
     .footer .section_contacto {
       font-weight: lighter;
       text-align: right;
-      padding-right: 1%; }
+      padding-right: 10%; }
       .footer .section_contacto .p_contacto {
         font-size: 20px; } }
 
@@ -152,26 +161,35 @@
 
 /*INDEX*/
 .titulo_index {
-  color: #bcfc3d;
-  font-family: "Bebas Neue", cursive;
-  font-size: 90px;
-  padding-top: 30px;
+  font-size: 80px;
+  padding-top: 30px; }
+
+.titulo_ind {
+  font-size: 60px;
   padding-bottom: 30px; }
 
 .titulo2_index {
-  color: #bcfc3d;
+  color: white;
   font-size: 50px;
-  font-family: 'The Nautigal', cursive;
-  font-weight: bold;
-  line-height: 2; }
+  font-family: "Bebas Neue", cursive;
+  line-height: 2;
+  text-align: center; }
 
 .titulo_redes {
   color: black;
   background-color: #bcfc3d;
   font-family: "Bebas Neue", cursive;
-  font-size: 60px;
+  font-size: 40px;
   margin-top: 50px;
   margin-bottom: 0px; }
+
+@media screen and (min-width: 500px) {
+  .titulo_index {
+    font-size: 120px; }
+  .titulo2_index {
+    font-size: 70px; }
+  .titulo_redes {
+    font-size: 60px; } }
 
 /*GALERIA*/
 .titulo_galeria {
@@ -243,7 +261,7 @@
 /*INDEX*/
 .main_index {
   background-color: gray;
-  background-image: url(../img/fondoindex3.png);
+  background-image: url(../img/fondoindex1.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -283,11 +301,17 @@
     padding-bottom: 20px; }
 
 /*INDEX: contenedor donde está el párrafo de presentación y las redes sociales*/
-.quienes_somos {
-  padding-bottom: 10px;
+.introduccion {
+  width: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.443);
+  margin-left: 5%; }
+
+.quienes_somos {
+  margin-top: 20px;
+  padding-bottom: 10px; }
 
 .cont_tit_redes {
   height: 100px; }
@@ -297,13 +321,16 @@
   flex-direction: row;
   justify-content: space-around;
   height: 200px; }
-  .contenedor_redes_index .bttn:hover {
-    transform: scale(2, 2); }
   .contenedor_redes_index .bi_index {
     color: white;
     font-size: 60px;
     text-decoration: none;
     align-self: center; }
+
+@media screen and (min-width: 500px) {
+  .introduccion {
+    width: 70%;
+    margin-left: 15%; } }
 
 /* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
 .parrafos_clases {
@@ -319,6 +346,32 @@
   animation-iteration-count: 2; }
   .parrafos_clases .p_clases {
     margin-bottom: 0px; }
+
+.cont_alq {
+  background-color: rgba(0, 0, 0, 0.5); }
+  .cont_alq .cont_txt_alq {
+    width: 60%; }
+
+.cont_clases {
+  background-color: rgba(131, 0, 131, 0.5); }
+  .cont_clases .cont_txt_clases {
+    width: 70%; }
+
+.cont_escuelita {
+  background-color: rgba(255, 255, 46, 0.5); }
+  .cont_escuelita .cont_txt_escuelita {
+    width: 60%; }
+
+.cont_gimnasio {
+  background-color: rgba(124, 124, 2, 0.5); }
+  .cont_gimnasio .cont_txt_gim {
+    width: 60%; }
+
+@media screen and (min-width: 500px) {
+  .txt_clases {
+    padding-left: 20%; }
+  .txt_gim {
+    padding-left: 10%; } }
 
 /*TORNEOS: contenedor con los flyer de los próximos torneos*/
 .publi_torneos {
@@ -340,9 +393,6 @@
 
 /* media de los contenedores de torneos*/
 @media screen and (min-width: 500px) {
-  .publi_torneos {
-    flex-direction: row;
-    justify-content: space-around; }
   .inscribite_torneos {
     margin-bottom: 20px; }
     .inscribite_torneos .parrafo_torneos {
@@ -394,45 +444,97 @@
   font-family: 'Bebas Neue';
   font-weight: lighter; }
 
+/* Extend incorporado al título principal del index*/
+.tit_index, .titulo_index, .titulo_ind {
+  color: #bcfc3d;
+  font-family: "Bebas Neue", cursive;
+  text-align: center; }
+
+/* Extend incorporado a los contenedores y párrafos del main de servicios */
+.cont_serv, .cont_alq, .cont_clases, .cont_escuelita, .cont_gimnasio {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.txt_serv, .cont_alq .cont_txt_alq .txt_alq, .cont_clases .cont_txt_clases .txt_clases, .cont_escuelita .cont_txt_escuelita .txt_escuelita, .cont_gimnasio .cont_txt_gim .txt_gim {
+  font-family: "Cormorant SC", serif;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px; }
+
+.img_servicios, .img_alq, .img_clases, .img_escuelita, .img_gim {
+  width: 80%;
+  height: 90%;
+  border: 2px solid black; }
+
+@media screen and (min-width: 500px) {
+  .cont_serv, .cont_alq, .cont_clases, .cont_escuelita, .cont_gimnasio {
+    flex-direction: row; }
+  .txt_serv, .cont_alq .cont_txt_alq .txt_alq, .cont_clases .cont_txt_clases .txt_clases, .cont_escuelita .cont_txt_escuelita .txt_escuelita, .cont_gimnasio .cont_txt_gim .txt_gim {
+    font-size: 40px; }
+  .img_servicios, .img_alq, .img_clases, .img_escuelita, .img_gim {
+    width: 60%;
+    height: 70%; } }
+
 /* MIXIN para los botones del index con las redes sociales*/
 .bttn__ig {
   background-color: #ff0095;
   width: 100px;
   height: 100px;
-  opacity: 0.7;
   align-self: center; }
 
 .bttn__tw {
   background-color: #4d4dff;
   width: 100px;
   height: 100px;
-  opacity: 0.7;
   align-self: center; }
 
 .bttn__fb {
   background-color: #0f0fff;
   width: 100px;
   height: 100px;
-  opacity: 0.7;
   align-self: center; }
 
 /* Mixin para los parrafos del index y la firma de LET*/
 .color_parrafos {
-  color: #bcfc3d;
+  color: white;
   font-size: 20px;
   font-family: 'roboto';
-  font-weight: light; }
+  text-align: center;
+  font-weight: lighter; }
 
 .firma_let {
-  color: #bcfc3d;
-  font-size: 40px;
+  color: white;
+  font-size: 30px;
   font-family: 'roboto';
-  font-weight: bolder; }
+  text-align: center;
+  font-weight: bold; }
+
+@media screen and (min-width: 500px) {
+  .color_parrafos {
+    color: white;
+    font-size: 25px;
+    font-family: 'roboto';
+    text-align: center;
+    font-weight: light; }
+  .firma_let {
+    color: white;
+    font-size: 40px;
+    font-family: 'roboto';
+    text-align: center;
+    font-weight: bolder; } }
 
 /* INDEX */
 .logo_uno {
-  display: flex;
-  justify-content: center; }
+  padding-top: 30px; }
 
 /* GALERÍA */
 .fotos_club {
@@ -491,20 +593,37 @@
 .fotos_gal:hover {
   transform: scale(1.1, 1.1); }
 
-/* TORNEOS */
-.foto_torneos1 {
-  width: 60%;
-  align-self: center; }
+/*SERVICIOS*/
+.img_alq {
+  margin-left: 10%; }
 
-.foto_torneos2 {
-  width: 60%;
-  align-self: center; }
+.img_clases {
+  margin-left: 10%; }
+
+.img_escuelita {
+  margin-left: 10%; }
+
+.img_gim {
+  margin-left: 10%; }
 
 @media screen and (min-width: 500px) {
-  .foto_torneos1 {
-    width: 33%; }
-  .foto_torneos2 {
-    width: 30%; } }
+  .img_alq {
+    margin-left: 10%; }
+  .img_clases {
+    margin-left: 30%; }
+  .img_gim {
+    margin-left: 30%; } }
+
+/* TORNEOS */
+.foto_torneos1 {
+  align-self: center; }
+  .foto_torneos1 .foto_torneos1:hover {
+    transform: rotateY(180deg);
+    transition: 2s; }
+
+.foto_torneos2 {
+  align-self: center;
+  margin-top: 20px; }
 
 /*SERVICIOS*/
 .animated__animated.animate__bounce {

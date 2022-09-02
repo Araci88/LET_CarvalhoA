@@ -29,13 +29,11 @@
             }
         }
     }
-
     .parrafo_footer{  
         color: yellowgreen;
         font-size: 15px;
         font-family: 'Bebas Neue';
     }
-    
     .section_contacto{
         width: 100%;
         display: flex;
@@ -62,6 +60,7 @@
             width: 70%;
             flex-direction: row;
             justify-content: space-between;
+            padding-left: 10%;
             .titulo_footer{
                 padding-top: 1%;
                 padding-left: 5%;
@@ -72,7 +71,6 @@
                 }
             }
         }
-
         .lista_footer{
             width: 100%;
             flex-direction: row;
@@ -91,7 +89,7 @@
         .section_contacto{
             font-weight: lighter;
             text-align: right;
-            padding-right: 1%;
+            padding-right: 10%;
             .p_contacto{
                 font-size: 20px;
             }

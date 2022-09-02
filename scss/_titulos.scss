@@ -1,27 +1,42 @@
 /*INDEX*/
 
 .titulo_index{
-    color:  rgb(188, 252, 61);
-    font-family: $tipografia_titulo_principal;
-    font-size: 90px;
+    @extend .tit_index;
+    font-size: 80px;
     padding-top: 30px;
+}
+.titulo_ind{
+    @extend.tit_index;
+    font-size: 60px;
     padding-bottom: 30px;
 }
 .titulo2_index{
-    color: rgb(188, 252, 61);
+    color: white;
     font-size: 50px;
-    font-family: 'The Nautigal', cursive;
-    font-weight: bold;
+    font-family:  $tipografia_titulo_principal;
     line-height: 2;
+    text-align: center;
 }
 .titulo_redes{
     color: black;
     background-color: rgb(188, 252, 61);
     font-family: $tipografia_titulo_principal;
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 50px;
     margin-bottom: 0px;
 }
+@media screen and (min-width: 500px){
+    .titulo_index{
+        font-size: 120px;
+    }
+    .titulo2_index{
+        font-size: 70px;
+    }
+    .titulo_redes{
+        font-size: 60px;
+    }
+}
+
 
 /*GALERIA*/
 

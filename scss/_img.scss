@@ -1,8 +1,7 @@
 /* INDEX */
     
 .logo_uno{
-    display: flex;
-    justify-content: center;
+    padding-top: 30px;
 }
 
 /* GALERÍA */
@@ -74,22 +73,46 @@
     transform: scale(1.1,1.1); 
 }
 
-/* TORNEOS */
-
-.foto_torneos1{
-    width: 60%;
-    align-self: center;
+/*SERVICIOS*/
+.img_alq{
+    @extend .img_servicios;
+    margin-left: 10%;
 }
-.foto_torneos2{
-    width: 60%;
-    align-self: center;
+.img_clases{
+    @extend .img_servicios;
+    margin-left: 10%;
+}
+.img_escuelita{
+    @extend .img_servicios;
+    margin-left: 10%;
+}
+.img_gim{
+    @extend .img_servicios;
+    margin-left: 10%;
 }
 
 @media screen and (min-width: 500px){
-    .foto_torneos1{
-        width: 33%;
+    .img_alq{
+        margin-left: 10%;
     }
-    .foto_torneos2{
-        width: 30%;
+    .img_clases{
+        margin-left: 30%;
     }
+    .img_gim{
+        margin-left: 30%;
+    }
+}
+
+/* TORNEOS */
+
+.foto_torneos1{
+    align-self: center;
+    .foto_torneos1:hover{
+        transform: rotateY(180deg);
+        transition: 2s;
+    }
+}
+.foto_torneos2{
+    align-self: center;
+    margin-top: 20px;
 }

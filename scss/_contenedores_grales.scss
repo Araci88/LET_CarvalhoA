@@ -1,31 +1,38 @@
 /*INDEX: contenedor donde está el párrafo de presentación y las redes sociales*/ 
-.quienes_somos{
-    padding-bottom: 10px;
+.introduccion{
+    width: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.443);
+    margin-left: 5%;
 }
-
+.quienes_somos{
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
 .cont_tit_redes{
     height: 100px;
 }
-
 .contenedor_redes_index{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 200px;
-    .bttn:hover{
-        transform: scale(2,2);
+    .bi_index{
+        color: white;
+        font-size: 60px;
+        text-decoration: none;
+        align-self: center;
     }
-        .bi_index{
-            color: white;
-            font-size: 60px;
-            text-decoration: none;
-            align-self: center;
-        }
 }
 
+@media screen and (min-width: 500px){
+    .introduccion{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
 
 /* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
 .parrafos_clases{
@@ -42,6 +49,55 @@
     .p_clases{
         margin-bottom: 0px;
     }    
+}
+.cont_alq{
+    @extend .cont_serv;
+    background-color: rgba(0, 0, 0, 0.500);
+    .cont_txt_alq{
+        width: 60%;
+        .txt_alq{
+            @extend .txt_serv;
+        }
+    }
+}
+.cont_clases{
+    @extend .cont_serv;
+    background-color: rgba(131, 0, 131, 0.500);
+    .cont_txt_clases{
+        width: 70%;
+        .txt_clases{
+            @extend .txt_serv;
+        }
+    }
+}
+.cont_escuelita{
+    @extend .cont_serv;
+    background-color: rgba(255, 255, 46, 0.500);
+    .cont_txt_escuelita{
+        width: 60%;
+        .txt_escuelita{
+            @extend .txt_serv;
+        }
+    }
+}
+.cont_gimnasio{
+    @extend .cont_serv;
+    background-color: rgba(124, 124, 2, 0.500);
+    .cont_txt_gim{
+        width: 60%;
+        .txt_gim{
+            @extend .txt_serv;
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .txt_clases{
+        padding-left: 20%;
+    }
+    .txt_gim{
+        padding-left: 10%;
+    }
 }
 
 /*TORNEOS: contenedor con los flyer de los próximos torneos*/
@@ -65,10 +121,6 @@
 }
 /* media de los contenedores de torneos*/
 @media screen and (min-width: 500px){
-    .publi_torneos{
-        flex-direction: row;
-        justify-content: space-around;
-    }
     .inscribite_torneos{
         margin-bottom: 20px;
         .parrafo_torneos{

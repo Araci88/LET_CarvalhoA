@@ -1,15 +1,24 @@
 .navbar-brand{
     color: yellowgreen;
-    font-size: 40px;
+    font-size: 60px;
     font-family: $tipografia_titulo_principal;
 }
 #navbarNav{
     justify-content: end;
 }
-.item_nav:hover{
-    transform: scale(1.2,1.1);
-}
 .nav-link{
     @extend .links_navfoot;
-    font-size: 30px;
+    font-size: 40px;
 }
+@media screen and(min-width:500px){
+    .item_nav:hover{
+        transform: scale(1.2,1.1);
+    }
+    .navbar-brand{
+        padding-left: 10%;
+    }
+    .navbar-collapse{
+        padding-right: 10%;
+    }
+}
+    
