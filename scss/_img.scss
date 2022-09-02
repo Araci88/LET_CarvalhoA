@@ -1,11 +1,9 @@
-/* INDEX */
-    
+/* INDEX */   
 .logo_uno{
     padding-top: 30px;
 }
 
 /* GALERÍA */
-
 .fotos_club{
     margin-left: 0px;
     margin-right: 0px;
@@ -90,7 +88,6 @@
     @extend .img_servicios;
     margin-left: 10%;
 }
-
 @media screen and (min-width: 500px){
     .img_alq{
         margin-left: 10%;
@@ -104,7 +101,6 @@
 }
 
 /* TORNEOS */
-
 .foto_torneos1{
     align-self: center;
 }
@@ -112,7 +108,6 @@
     align-self: center;
     margin-top: 20px;
 }
-
 @media screen and (min-width: 500px){
         .img_torneos:hover{
             transform: rotateY(360deg);

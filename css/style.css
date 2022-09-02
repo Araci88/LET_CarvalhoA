@@ -7,6 +7,7 @@
 body {
   overflow-x: hidden; }
 
+/*NAV*/
 .navbar-brand {
   color: yellowgreen;
   font-size: 40px;
@@ -70,8 +71,8 @@ body {
       margin-bottom: 0px;
       font-size: 20px; }
 
+/*FOOTER PC*/
 @media screen and (min-width: 500px) {
-  /*FOOTER PC*/
   .footer {
     flex-direction: row;
     justify-content: space-between;

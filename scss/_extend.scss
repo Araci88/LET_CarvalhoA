@@ -1,5 +1,4 @@
 /*Agrego extend a TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/ 
-
 .tit_principal{
     color: rgb(17, 17, 17);
     font-family: 'Bebas Neue', cursive;
@@ -7,7 +6,6 @@
 }
 
 /* Extend incorporado a las listas del nav y el footer */
-
 .links_navfoot{
     text-decoration: none;
     color:yellowgreen;
@@ -23,7 +21,6 @@
 }
 
 /* Extend incorporado a los contenedores y párrafos del main de servicios */ 
-
 .cont_serv{
     width: 70%;
     display: flex;
@@ -48,7 +45,6 @@
     height: 90%;
     border: 2px solid black;
 }
-
 @media screen and (min-width: 500px){
     .cont_serv{
         flex-direction: row;
