@@ -66,7 +66,7 @@ body {
     .footer .section_contacto .p_contacto {
       margin-bottom: 0px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   /*FOOTER PC*/
   .footer {
     flex-direction: row;
@@ -239,7 +239,7 @@ body {
   padding-top: 20px;
   padding-bottom: 20px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   .titulo_torneos {
     font-size: 80px;
     margin-bottom: 20px;
@@ -254,7 +254,7 @@ body {
 .titulo_contacto {
   font-size: 40px; }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .titulo_contacto {
     font-size: 80px; } }
 
@@ -420,7 +420,7 @@ body {
       height: 50%;
       margin-top: 10px; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   .div_contacto {
     display: grid;
     grid-template-columns: 40% 40%;
