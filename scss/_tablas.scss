@@ -12,3 +12,9 @@
         padding-bottom: 20px;
     }
 }
+@media screen and (min-width: 500px){
+    .table:hover{
+        transform: scale(1.1,1.1);
+        transition: 1s;
+    }
+}

@@ -20,7 +20,7 @@
             display: flex;
             justify-content: space-around;
             list-style-type: none;
-            font-size: 15px;
+            font-size: 20px;
             text-align: center;
             padding-left: 0px;
             color: yellowgreen;
@@ -31,7 +31,7 @@
     }
     .parrafo_footer{  
         color: yellowgreen;
-        font-size: 15px;
+        font-size: 20px;
         font-family: 'Bebas Neue';
     }
     .section_contacto{
@@ -44,6 +44,7 @@
         text-align: center;  
         .p_contacto{
             margin-bottom: 0px;
+            font-size: 20px;
         }
     }
 }
@@ -91,7 +92,7 @@
             text-align: right;
             padding-right: 10%;
             .p_contacto{
-                font-size: 20px;
+                font-size: 25px;
             }
         }
     }

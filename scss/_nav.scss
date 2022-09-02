@@ -1,6 +1,6 @@
 .navbar-brand{
     color: yellowgreen;
-    font-size: 60px;
+    font-size: 40px;
     font-family: $tipografia_titulo_principal;
 }
 #navbarNav{
@@ -8,7 +8,7 @@
 }
 .nav-link{
     @extend .links_navfoot;
-    font-size: 40px;
+    font-size: 25px;
 }
 @media screen and(min-width:500px){
     .item_nav:hover{
@@ -16,9 +16,13 @@
     }
     .navbar-brand{
         padding-left: 10%;
+        font-size: 60px;
     }
     .navbar-collapse{
         padding-right: 10%;
+    }
+    .nav-link{
+        font-size: 40px;
     }
 }
     

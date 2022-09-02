@@ -9,22 +9,25 @@ body {
 
 .navbar-brand {
   color: yellowgreen;
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Bebas Neue", cursive; }
 
 #navbarNav {
   justify-content: end; }
 
 .nav-link {
-  font-size: 40px; }
+  font-size: 25px; }
 
 @media screen and (min-width: 500px) {
   .item_nav:hover {
     transform: scale(1.2, 1.1); }
   .navbar-brand {
-    padding-left: 10%; }
+    padding-left: 10%;
+    font-size: 60px; }
   .navbar-collapse {
-    padding-right: 10%; } }
+    padding-right: 10%; }
+  .nav-link {
+    font-size: 40px; } }
 
 /* FOOTER MOBILE*/
 .footer {
@@ -47,13 +50,13 @@ body {
       display: flex;
       justify-content: space-around;
       list-style-type: none;
-      font-size: 15px;
+      font-size: 20px;
       text-align: center;
       padding-left: 0px;
       color: yellowgreen; }
   .footer .parrafo_footer {
     color: yellowgreen;
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Bebas Neue'; }
   .footer .section_contacto {
     width: 100%;
@@ -64,7 +67,8 @@ body {
     font-weight: lighter;
     text-align: center; }
     .footer .section_contacto .p_contacto {
-      margin-bottom: 0px; }
+      margin-bottom: 0px;
+      font-size: 20px; }
 
 @media screen and (min-width: 500px) {
   /*FOOTER PC*/
@@ -101,7 +105,7 @@ body {
       text-align: right;
       padding-right: 10%; }
       .footer .section_contacto .p_contacto {
-        font-size: 20px; } }
+        font-size: 25px; } }
 
 /*CONTACTO*/
 .div_formulario {
@@ -136,12 +140,13 @@ body {
 @media screen and (min-width: 500px) {
   .div_formulario {
     grid-area: c1;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    margin-left: 15%; }
     .div_formulario .fil_contacto {
       width: 100%;
       border-width: 10px; }
       .div_formulario .fil_contacto .leg_contacto {
-        font-size: 50px; }
+        font-size: 60px; }
       .div_formulario .fil_contacto .cont_label {
         padding-top: 2px;
         padding-bottom: 2px; }
@@ -152,7 +157,7 @@ body {
       .div_formulario .fil_contacto .boton_form:hover {
         transform: scale(1.1, 1.1); }
       .div_formulario .fil_contacto .boton_formf:hover {
-        transform: scale(1, 1); }
+        transform: scale(1.1, 1.1); }
       .div_formulario .fil_contacto .check_label {
         padding-top: 7px;
         padding-bottom: 7px; }
@@ -161,16 +166,16 @@ body {
 
 /*INDEX*/
 .titulo_index {
-  font-size: 80px;
+  font-size: 60px;
   padding-top: 30px; }
 
 .titulo_ind {
-  font-size: 60px;
+  font-size: 40px;
   padding-bottom: 30px; }
 
 .titulo2_index {
   color: white;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Bebas Neue", cursive;
   line-height: 2;
   text-align: center; }
@@ -212,6 +217,12 @@ body {
     font-weight: bold;
     background-color: brown; }
 
+@media screen and (min-width: 500px) {
+  .titulo1_galeria {
+    font-size: 100px; }
+  .titulo2_galeria {
+    font-size: 90px; } }
+
 /*SERVICIOS*/
 .titulo_servicios {
   background-image: url(../img/tituloservicios1.png);
@@ -220,6 +231,10 @@ body {
     font-size: 80px;
     margin-bottom: 0px;
     padding-top: 10px; }
+
+@media screen and (min-width: 500px) {
+  .titulo1_servicios {
+    font-size: 100px; } }
 
 /*TORNEOS*/
 .titulo_torneos {
@@ -241,11 +256,11 @@ body {
 
 @media screen and (min-width: 500px) {
   .titulo_torneos {
-    font-size: 80px;
+    font-size: 100px;
     margin-bottom: 20px;
     padding-bottom: 20px; }
   .titulo1_torneos {
-    font-size: 50px; }
+    font-size: 80px; }
   .titulo2_torneos {
     font-size: 40px;
     padding-bottom: 20px; } }
@@ -256,7 +271,7 @@ body {
 
 @media only screen and (min-width: 500px) {
   .titulo_contacto {
-    font-size: 80px; } }
+    font-size: 100px; } }
 
 /*INDEX*/
 .main_index {
@@ -299,6 +314,11 @@ body {
   margin-bottom: 0px; }
   .table .tabla_body {
     padding-bottom: 20px; }
+
+@media screen and (min-width: 500px) {
+  .table:hover {
+    transform: scale(1.1, 1.1);
+    transition: 1s; } }
 
 /*INDEX: contenedor donde está el párrafo de presentación y las redes sociales*/
 .introduccion {
@@ -427,9 +447,10 @@ body {
     grid-template-rows: 100%;
     grid-template-areas: "c1 c2";
     justify-content: space-evenly; }
+    .div_contacto .div_telefono {
+      padding-top: 50px; }
     .div_contacto .maps_contacto {
-      width: 100%;
-      padding-bottom: 10px; } }
+      width: 100%; } }
 
 /*Agrego extend a TITULOS PRINCIPALES: galería, contacto, servicios y torneos*/
 .tit_principal, .titulo_galeria .titulo1_galeria, .titulo_servicios .titulo1_servicios, .titulo_torneos, .titulo1_torneos, .titulo_contacto {
@@ -513,7 +534,7 @@ body {
 
 .firma_let {
   color: white;
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'roboto';
   text-align: center;
   font-weight: bold; }
@@ -617,13 +638,15 @@ body {
 /* TORNEOS */
 .foto_torneos1 {
   align-self: center; }
-  .foto_torneos1 .foto_torneos1:hover {
-    transform: rotateY(180deg);
-    transition: 2s; }
 
 .foto_torneos2 {
   align-self: center;
   margin-top: 20px; }
+
+@media screen and (min-width: 500px) {
+  .img_torneos:hover {
+    transform: rotateY(360deg);
+    transition: 5s; } }
 
 /*SERVICIOS*/
 .animated__animated.animate__bounce {
