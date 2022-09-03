@@ -14,6 +14,9 @@
 .bttn__fb{
     @include estilo_bttn (rgb(15, 15, 255));
 }
+.bttn__wha{
+    @include estilo_bttn (rgb(20, 197, 20));
+}
 
 /* Mixin para los parrafos del index y la firma de LET*/
 @mixin parrafos_index ($tamanio){

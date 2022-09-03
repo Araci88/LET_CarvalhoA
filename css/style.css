@@ -525,6 +525,12 @@ body {
   height: 100px;
   align-self: center; }
 
+.bttn__wha {
+  background-color: #14c514;
+  width: 100px;
+  height: 100px;
+  align-self: center; }
+
 /* Mixin para los parrafos del index y la firma de LET*/
 .color_parrafos {
   color: white;
