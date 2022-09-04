@@ -108,9 +108,14 @@
     align-self: center;
     margin-top: 20px;
 }
+@media screen and (max-width: 500px){
+    .img_torneos{
+        width: 80%;
+    }
+}
 @media screen and (min-width: 500px){
-        .img_torneos:hover{
-            transform: rotateY(360deg);
-            transition: 5s;
-        }
+    .img_torneos:hover{
+        transform: rotateY(360deg);
+        transition: 5s;
+    }
 }

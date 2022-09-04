@@ -347,11 +347,21 @@ body {
     font-size: 60px;
     text-decoration: none;
     align-self: center; }
+  .contenedor_redes_index .bttn__ig:hover {
+    background-color: #ff0095; }
+  .contenedor_redes_index .bttn__tw:hover {
+    background-color: #4d4dff; }
+  .contenedor_redes_index .bttn__fb:hover {
+    background-color: #0f0fff; }
+  .contenedor_redes_index .bttn__wha:hover {
+    background-color: #14c514; }
 
 @media screen and (min-width: 500px) {
   .introduccion {
     width: 70%;
-    margin-left: 15%; } }
+    margin-left: 15%; }
+  .bttn:hover {
+    transform: scale(1.1); } }
 
 /* SERVICIOS: contenedor de los párrafor para contactarse por las clases*/
 .parrafos_clases {
@@ -649,6 +659,10 @@ body {
 .foto_torneos2 {
   align-self: center;
   margin-top: 20px; }
+
+@media screen and (max-width: 500px) {
+  .img_torneos {
+    width: 80%; } }
 
 @media screen and (min-width: 500px) {
   .img_torneos:hover {
