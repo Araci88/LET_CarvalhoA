@@ -344,9 +344,8 @@ body {
   height: 200px; }
   .contenedor_redes_index .bi_index {
     color: white;
-    font-size: 60px;
-    text-decoration: none;
-    align-self: center; }
+    font-size: 40px;
+    text-decoration: none; }
   .contenedor_redes_index .bttn__ig:hover {
     background-color: #ff0095; }
   .contenedor_redes_index .bttn__tw:hover {
@@ -519,26 +518,26 @@ body {
 /* MIXIN para los botones del index con las redes sociales*/
 .bttn__ig {
   background-color: #ff0095;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   align-self: center; }
 
 .bttn__tw {
   background-color: #4d4dff;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   align-self: center; }
 
 .bttn__fb {
   background-color: #0f0fff;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   align-self: center; }
 
 .bttn__wha {
   background-color: #14c514;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   align-self: center; }
 
 /* Mixin para los parrafos del index y la firma de LET*/

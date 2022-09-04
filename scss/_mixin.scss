@@ -1,8 +1,8 @@
 /* MIXIN para los botones del index con las redes sociales*/
 @mixin estilo_bttn ($fondo){
     background-color: $fondo;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     align-self: center;
 }
 .bttn__ig{
