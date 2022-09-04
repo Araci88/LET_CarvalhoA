@@ -108,7 +108,7 @@ body {
       .footer .section_contacto .p_contacto {
         font-size: 25px; } }
 
-/*CONTACTO*/
+/*FORMULARIO CONTACTO*/
 .div_formulario {
   width: 60%;
   align-self: center; }
@@ -120,7 +120,7 @@ body {
     text-align: center; }
     .div_formulario .fil_contacto .leg_contacto {
       font-family: 'The Nautigal', cursive;
-      font-size: 30px; }
+      font-size: 40px; }
     .div_formulario .fil_contacto .cont_seldni {
       width: 90%;
       align-self: center; }
@@ -239,13 +239,13 @@ body {
 
 /*TORNEOS*/
 .titulo_torneos {
-  font-size: 40px;
+  font-size: 80px;
   background-image: url(../img/titulotorneos.png);
   background-position: center;
   margin-bottom: 10px; }
 
 .titulo1_torneos {
-  font-size: 30px; }
+  font-size: 50px; }
 
 .titulo2_torneos {
   color: #b4f03c;
@@ -268,7 +268,7 @@ body {
 
 /*CONTACTO*/
 .titulo_contacto {
-  font-size: 40px; }
+  font-size: 80px; }
 
 @media only screen and (min-width: 500px) {
   .titulo_contacto {
@@ -317,7 +317,7 @@ body {
     padding-bottom: 20px; }
 
 @media screen and (min-width: 500px) {
-  .table:hover {
+  .tabla_body:hover {
     transform: scale(1.1, 1.1);
     transition: 1s; } }
 

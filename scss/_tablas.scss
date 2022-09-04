@@ -1,5 +1,4 @@
 /*TORNEOS tabla de jugadores*/
-
 .table{
     width: 100%;
     display: flex;
@@ -12,7 +11,7 @@
     }
 }
 @media screen and (min-width: 500px){
-    .table:hover{
+    .tabla_body:hover{
         transform: scale(1.1,1.1);
         transition: 1s;
     }

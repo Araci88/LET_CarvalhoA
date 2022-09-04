@@ -37,7 +37,6 @@
     }
 }
 
-
 /*GALERIA*/
 
 .titulo_galeria{
@@ -94,14 +93,14 @@
 
 .titulo_torneos{
     @extend .tit_principal;
-    font-size: 40px;
+    font-size: 80px;
     background-image: url(../img/titulotorneos.png);
     background-position: center;
     margin-bottom: 10px;
 }
 .titulo1_torneos{
     @extend .tit_principal;
-    font-size: 30px;
+    font-size: 50px;
 }
 .titulo2_torneos{
     color: rgb(180, 240, 60);
@@ -130,9 +129,8 @@
 
 .titulo_contacto{
     @extend .tit_principal;
-    font-size: 40px;
+    font-size: 80px;
 }
-
 @media only screen and (min-width: 500px){ 
     .titulo_contacto{
         font-size: 100px;
